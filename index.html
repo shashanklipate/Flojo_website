@@ -3,22 +3,24 @@
 
 <head>
     <link rel=stylesheet href=wp-content/cache/minify/016e7.default.include.77847c.css media=all>
+
     <script src=wp-content/cache/minify/016e7.default.include.0b539f.js></script>
     <link rel="shortcut icon" href=wp-content/logoo.png>
-    <title> Flojo</title>
-    <script
-        src='../d2ieqaiwehnqqp.cloudfront.net/te42c6a59776cb1f4e9b497358f7720aa3eac.js?itvr=2.1.5&amp;ver=2.1.5'></script>
+    <title>FLOJO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src=wp-content/plugins/business-reviews-bundle/assets/js/wpac-time.js></script>
     <script src=wp-content/plugins/business-reviews-bundle/assets/js/blazy.min.js></script>
     <script src=wp-content/plugins/business-reviews-bundle/assets/js/swiper.min.js></script>
     <script src=wp-content/plugins/business-reviews-bundle/assets/js/rplg.js></script>
+
     <style>
         #section1 {
-            /*background-image:url("wp-content/section-bg1.jpg");*/
+            background-image: url("wp-content/2bg.jpg");
             background-repeat: no-repeat;
             /*width:100%;*/
             background-attachment: fixed;
             background-size: cover;
+
             /*animation: mymove 5s infinite;
 @keyframes mymove {
   50% {background-position: center;}
@@ -26,7 +28,7 @@
         }
 
         #section2 {
-            background-image: url("wp-content/a.jpg");
+            background-image: url("wp-content/3bg.jpg");
             background-repeat: no-repeat fixed 0 0;
             /*width:100%;*/
             /*background-attachment: fixed;  */
@@ -50,7 +52,7 @@
 
 
         #section3 {
-            background-image: url("wp-content/pw_maze_black_2X.png");
+            background-image: url("wp-content/5bg.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -65,13 +67,36 @@
 
         #section3:hover {
             /* img zoom in on hover (x, y): */
-            -ms-transform: scale(1.1, 1.1);
-            -webkit-transform: scale(1.1, 1.1);
-            -moz-transform: scale(1.1, 1.1);
-            -o-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.5, 1.5);
+            -webkit-transform: scale(1.5, 1.5);
+            -moz-transform: scale(1.5, 1.5);
+            -o-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
         }
 
+        #section4 {
+            background-image: url("wp-content/4bg.jpg");
+            background-repeat: no-repeat;
+            /*width:100%;*/
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: auto;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.8;
+
+        }
+
+        /*#section4:hover {
+  
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5); 
+  transform: scale(1.5, 1.5);
+}*/
         #spin {
             color: red;
         }
@@ -81,17 +106,26 @@
             animation: spin 1s linear infinite;
         }
 
-        .letters {
-            transform-origin: 50% 100%;
+        /*#ml9{
+animation: type 8s steps(60, end);
+}
+@keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+*/
+        /*.letters {
+  transform-origin: 50% 100%;
+  
 
-
-            animation: left_to_right 3s ease;
-            animation-iteration-count: infinite;
-        }
+ animation: left_to_right 5s ease;
+ animation-iteration-count: infinite;
+}*/
 
         @keyframes left_to_right {
             from {
-                margin-left: 100%;
+                margin-left: 50%;
             }
 
             to {
@@ -139,6 +173,14 @@
             .flex-container {
                 flex-direction: column;
             }
+        }
+
+        #whychoose {
+            background-image: url('wp-content/7bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
         }
     </style>
     <style data-type=vc_custom-css>
@@ -1034,7 +1076,7 @@
                 <div class=row>
                     <div class="col span_3">
                         <a id=logo href=index.html>
-                            <img class="stnd default-logo" alt="King Kong" src=wp-content/logo.png>
+                            <img class="stnd default-logo" alt="King Kong" src=wp-content/logogreen.png>
                         </a>
                     </div>
                     <div class="col span_9 col_last">
@@ -1051,7 +1093,13 @@
                                         <span class=menu>menu</span>
                                     </div>
                                 </li>
-
+                                <li id=search-btn>
+                                    <div>
+                                        <a href=#searchbox>
+                                            <span class=icon-salient-search aria-hidden=true></span>
+                                        </a>
+                                    </div>
+                                </li>
                                 <li class=slide-out-widget-area-toggle>
                                     <div>
                                         <a href=#sidewidgetarea class=closed>
@@ -1092,8 +1140,7 @@
                             </div>
                             <div class=nectar-video-wrap data-bg-alignment>
                                 <video class=nectar-video-bg width=1800 height=700 preload=auto loop autoplay muted>
-                                    <source src=wp-content/uploads/2015/12/Bg-Movie.WEBM type=video/mp4>
-                                    <!-- <source src="https://www.youtube.com/watch?v=QsY8fnvMn6c" type=video/mp4 > -->
+                                    <source src=wp-content/uploads/2015/12/Bg-Movie.webm type=video/webm>
                                 </video>
                             </div>
                             <div class="col span_12 dark left">
@@ -1108,8 +1155,7 @@
                                                 <div class=wpb_wrapper>
                                                     <p class="subheadline span_9 hidemobile"
                                                         style="margin-left: auto; margin-right: auto;">
-                                                        <b> EMPOWERING GROWTH FOR HOSPITALITY BRAND </b>
-                                                    </p>
+                                                       <b> EMPOWERING GROWTH FOR HOSPITALITY BRAND </b></p>
                                                     <p class=subheadline span_9 hidemobile>Foolproof Strategy Reveals
                                                         How to</p>
                                                     <h2 style="text-align: center;">
@@ -1120,12 +1166,14 @@
                                             </div>
                                             <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                 <div class=wpb_wrapper>
-                                                    <a href="http://fast.wistia.net/embed/iframe/385blo2gwe?popover=true"
+                                                    <a href="wp-content/uploads/2015/12/Bg-Movie.webm"
                                                         class="wistia-popover[height=751,playerColor=000000,width=1281]">
                                                         <div class=pulse-container>
                                                             <button class=pulse-button>Play</button>
                                                         </div>
                                                     </a>
+                                                    <script charset=ISO-8859-1
+                                                        src=../fast.wistia.com/assets/external/popover-v1.js></script>
                                                 </div>
                                             </div>
                                             <div class=divider-wrap>
@@ -1172,400 +1220,74 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END OF INTRO -->
 
 
-                        <!-- ***************1* Fuelld by************* -->
+                        <!-- ***************1************** -->
                         <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
                             class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
                             style="padding-top: 80px; padding-bottom: 80px; ">
 
                             <div class=row-bg-wrap>
                                 <div class=inner-wrap>
-                                    <div class="row-bg  using-bg-color  " style="background-color:rgb(10 9 10);; "
+                                    <div class="row-bg  using-bg-color  " style="background-color:rgb(10 9 10); "
                                         data-color_overlay data-color_overlay_2 data-gradient_direction
-                                        data-overlay_strength=0.3 data-enable_gradient=false></div>
+                                        data-overlay_strength=0.3 data-enable_gradient=false id="section1"></div>
                                 </div>
                             </div>
 
                             <div class="col span_12 dark left">
-
-                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                    data-shadow=none data-border-animation data-border-animation-delay
-                                    data-border-width=none data-border-style=solid data-border-color data-bg-cover
-                                    data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                    data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                    <div id="section1">
-                                        <div class=vc_column-inner>
-                                            <div class=wpb_wrapper>
-                                                <div id=fws_6073d7138b911 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class=span_9 style="margin: 0 auto;">
-                                                                                <p
-                                                                                    style="text-align:left; padding: 20px 0; color: #ffffff;font-family:MabryPro-Medium; font-size: 70px">
-                                                                                    Fuelled By<br></p>
-                                                                                <h2 class="span_9" id="animatedhread"
-                                                                                    style="text-align:left;  margin-right: auto;">
-                                                                                    <span
-                                                                                        style="color:#a3dc18 ;font-size: 120px;text-align:left;    font-weight:200;font-style:normal;font-family: Baskerville;"
-                                                                                        id="spin"></span><br>
-
-                                                                                </h2>
-
-
-                                                                                <p
-                                                                                    style="text-align:left; padding: 20px 0; color:white;font-size: 28px">
-                                                                                    <br><br>
-                                                                                    Flojo is an integrated marketing
-                                                                                    agency fusing strategy, creativity
-                                                                                    and technology for elite brands and
-                                                                                    leading hospitality businesses
-                                                                                    globally.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--********** FUELL BY end************ -->
-                        <!--********** 2 ************ -->
-                        <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
-                            class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
-                            style="padding-top: 80px; padding-bottom: 80px; ">
-
-                            <div class=row-bg-wrap>
-                                <div class=inner-wrap>
-                                    <div class="row-bg  using-bg-color  " style="background-color:rgb(10 9 10);; "
-                                        data-color_overlay data-color_overlay_2 data-gradient_direction
-                                        data-overlay_strength=0.3 data-enable_gradient=false></div>
-                                </div>
-                            </div>
-
-                            <div class="col span_12 dark left">
-
-                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                    data-shadow=none data-border-animation data-border-animation-delay
-                                    data-border-width=none data-border-style=solid data-border-color data-bg-cover
-                                    data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                    data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                    <div id="section1">
-                                        <div class=vc_column-inner>
-                                            <div class=wpb_wrapper>
-                                                <div id=fws_6073d7138b911 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class=span_9 style="margin: 0 auto;">
-                                                                                <h1
-                                                                                    style="text-align:left; padding: 2px 0; color: #a3dc18;font-family:MabryPro-Medium; font-size: 75px"><b>
-                                                                                    WE CONSISTENTLY TURN ADVERTISING INTO PROFIT</b>
-                                                                                </h1>
-                                                                                
-                                                                                <p style="text-align:left; padding: 20px 0; color:white;font-size: 38px">By sending highly qualified traffic to your site</p>
-                                                                                <!-- <h2 class="span_9" id="animatedhread"
-                                                                                    style="text-align:left;  margin-right: auto;">
-                                                                                    <span
-                                                                                        style="color:#a3dc18 ;font-size: 120px;text-align:left;    font-weight:200;font-style:normal;font-family: Baskerville;"
-                                                                                        id="spin"></span><br> -->
-
-                                                                                </h2>
-
-
-                                                                                <p
-                                                                                    style="text-align:left; padding: 20px 0; color:white;font-size: 23px">
-                                                                                    <br>
-                                                                                    Most agencies have it wrong! They focus on clicks and traffice
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--********** 2end ************ -->
-                        <div class="l__home">
-                            <section class="l__slider-panels">
-                                <div class="m__slider-panel clickable-block" id="one">
-                                    <div class="m__slider-panel--bg-image" style="background-image:url(2bg.jpg)"></div>                           
-                                </div>
-                            </section>
-
-
-
-                            <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
-                                class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
-                                style="padding-top: 80px; padding-bottom: 80px; ">
-                                <div class=row-bg-wrap>
-                                    <div class=inner-wrap>
-                                        <div class="row-bg  using-bg-color  " style="background-color: #333333; "
-                                            data-color_overlay data-color_overlay_2 data-gradient_direction
-                                            data-overlay_strength=0.3 data-enable_gradient=false></div>
-                                    </div>
-                                </div>
-                                <div class="col span_12 dark left">
+                                <div>
                                     <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
                                         data-shadow=none data-border-animation data-border-animation-delay
                                         data-border-width=none data-border-style=solid data-border-color data-bg-cover
                                         data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
                                         data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                        <div class=vc_column-inner>
-                                            <div class=wpb_wrapper>
-                                                
-                                                <div id=fws_6073d7138c1e1 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class="item_child span_9">
-                                                                                <h3 class="_title"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #adda8b;">01</span>
-                                                                                </h3>
-                                                                                <h4 class="_subtitle"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #ffffff;">traffic
-                                                                                        generation</span></h4>
-                                                                                <div class=_content
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #8d8d8d; line-height: 1.7em;">We
-                                                                                        send a steady stream of highly
-                                                                                        qualified customers in
-                                                                                        &#8220;hunt
-                                                                                        mode&#8221; to your website
-                                                                                        through
-                                                                                        both paid and organic traffic
-                                                                                        sources.</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                        <div>
+                                            <div class=vc_column-inner>
+                                                <div class=wpb_wrapper>
+                                                    <div id=fws_6073d7138b911 data-midnight data-column-margin=default
+                                                        data-bg-mobile-hidden
+                                                        class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                        style="padding-top: 0px; padding-bottom: 0px; ">
+                                                        <div class=row-bg-wrap>
+                                                            <div class="row-bg   " style></div>
                                                         </div>
-                                                        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class="item_child span_9"
-                                                                                style="float: right;">
-                                                                                <h3 class="_title"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #adda8b;">02</span>
-                                                                                </h3>
-                                                                                <h4 class="_subtitle"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #ffffff;">conversion</span>
-                                                                                </h4>
-                                                                                <div class=_content
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #8d8d8d; line-height: 1.7em;">We
-                                                                                        increase the amount of visitors
-                                                                                        that
-                                                                                        turn into buyers by implementing
-                                                                                        propriety tactics that help our
-                                                                                        client’s double or even triple
-                                                                                        their
-                                                                                        sales.</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id=fws_6073d7138ce8a data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section   noshowdesktop "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class=divider-wrap>
-                                                                        <div style="height: 40px;" class=divider></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id=fws_6073d7138d659 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="img-with-aniamtion-wrap center"
-                                                                        data-max-width=100%>
-                                                                        <div class=inner><img data-shadow=none
-                                                                                data-shadow-direction=middle
-                                                                                class="img-with-animation " data-delay=0
-                                                                                height=313 width=314
-                                                                                data-animation=fade-in
-                                                                                src=wp-content/img_we.jpg
-                                                                                alt></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id=fws_6073d7138e746 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section   noshowdesktop "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class=divider-wrap>
-                                                                        <div style="height: 40px;" class=divider></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id=fws_6073d7138edb4 data-midnight data-column-margin=default
-                                                    data-bg-mobile-hidden
-                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
-                                                    style="padding-top: 0px; padding-bottom: 0px; ">
-                                                    <div class=row-bg-wrap>
-                                                        <div class="row-bg   " style></div>
-                                                    </div>
-                                                    <div class="col span_12  left">
-                                                        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class="item_child span_9">
-                                                                                <h3 class="_title"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #adda8b;">03</span>
-                                                                                </h3>
-                                                                                <h4 class="_subtitle"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #ffffff;">retargeting</span>
-                                                                                </h4>
-                                                                                <div class=_content
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #8d8d8d; line-height: 1.7em;">The
-                                                                                        visitors that don’t convert will
-                                                                                        be
-                                                                                        retargeted through timely and
-                                                                                        compelling ads that will follow
-                                                                                        them
-                                                                                        around the Internet.</span>
+                                                        <div class="col span_12  left">
+                                                            <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                                data-border-animation data-border-animation-delay
+                                                                data-border-width=none data-border-style=solid
+                                                                data-border-color data-bg-cover data-padding-pos=all
+                                                                data-has-bg-color=false data-bg-color data-bg-opacity=1
+                                                                data-hover-bg data-hover-bg-opacity=1 data-animation
+                                                                data-delay=0>
+                                                                <div class=vc_column-inner>
+                                                                    <div class=wpb_wrapper>
+                                                                        <div
+                                                                            class="wpb_text_column wpb_content_element ">
+                                                                            <div class=wpb_wrapper>
+                                                                                <div class=span_9
+                                                                                    style="margin: 0 auto;">
+                                                                                    <p
+                                                                                        style="text-align:left; padding: 20px 0; color: #ffffff;font-family:MabryPro-Medium; font-size: 70px">
+                                                                                        Fuelled By</p><br>
+                                                                                    <h2 class="span_9"
+                                                                                        id="animatedhread"
+                                                                                        style="text-align:left;  margin-right: auto;"><b>
+                                                                                        <span
+                                                                                            style="color:#a3dc18 ;font-size: 110px;text-align:left;    font-weight:800;font-style:normal;font-family: Baskerville;"
+                                                                                            id="spin"></span></b>
+                                                                    
+                                                                                    </h2>
+                                                                                    
+
+                                                                                    <p
+                                                                                        style="text-align:left; padding: 20px 0; color:white;font-size: 26px"><br><br>
+                                                                                        Flojo is an integrated marketing
+                                                                                        agency fusing strategy,
+                                                                                        creativity and
+                                                                                        technology for elite brands and
+                                                                                        leading hospitality businesses
+                                                                                        globally.</p>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1573,39 +1295,426 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
-                                                            data-border-animation data-border-animation-delay
-                                                            data-border-width=none data-border-style=solid
-                                                            data-border-color data-bg-cover data-padding-pos=all
-                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1
-                                                            data-hover-bg data-hover-bg-opacity=1 data-animation
-                                                            data-delay=0>
-                                                            <div class=vc_column-inner>
-                                                                <div class=wpb_wrapper>
-                                                                    <div class="wpb_text_column wpb_content_element ">
-                                                                        <div class=wpb_wrapper>
-                                                                            <div class="item_child span_9"
-                                                                                style="float: right;">
-                                                                                <h3 class="_title"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #adda8b;">04</span>
-                                                                                </h3>
-                                                                                <h4 class="_subtitle"
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #ffffff;">nurturing</span>
-                                                                                </h4>
-                                                                                <div class=_content
-                                                                                    style="text-align: center;"><span
-                                                                                        style="color: #8d8d8d; line-height: 1.7em;">We
-                                                                                        help you set up an automated
-                                                                                        system
-                                                                                        that nurtures your leads for
-                                                                                        you,
-                                                                                        making your website run like a
-                                                                                        well
-                                                                                        oiled sales machine.</span>
-                                                                                </div>
-                                                                            </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--********** 1 end************ -->
+                        <!--********** 2 ************ -->
+                        <!-- <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
+                            class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
+                            style="padding-top: 80px; padding-bottom: 80px; ">
+                            <div class=row-bg-wrap>
+                                <div class=inner-wrap>
+                                    <div class="row-bg  using-bg-color  " style="background-color: #333333; "
+                                        data-color_overlay data-color_overlay_2 data-gradient_direction
+                                        data-overlay_strength=0.3 data-enable_gradient=false id="section2"></div>
+                                </div>
+                            </div>
+                            <div class="col span_12 dark left">
+                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                    data-shadow=none data-border-animation data-border-animation-delay
+                                    data-border-width=none data-border-style=solid data-border-color data-bg-cover
+                                    data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
+                                    data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                    <div class=vc_column-inner>
+                                        <div class=wpb_wrapper>
+                                            <div id=fws_6073d7138b911 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section"
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div >
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class=span_9 style="margin: 0 auto;">
+                                                                            <p
+                                                                                style="text-align: center; padding: 20px 0; color: #84ba54;">
+                                                                                Fuelled By</p>
+                                                                            <h2 class="span_9"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Creativity</span>
+                                                                                </h2>
+                                                                                 <h2 class="span_9"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Strategy</span>
+                                                                                </h2>
+                                                                                <h2 class="span_9"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Technology</span>
+                                                                                </h2>
+                                                                            
+                                                                            <p
+                                                                                style="text-align: center; padding: 20px 0; color: #8d8d8d;">
+                                                                                Flojo is an integrated marketing agency fusing strategy, creativity and
+                                            technology for elite brands and leading hospitality businesses globally.</p>
+                                              <div id=fws_6073d7138c1e1 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class="item_child span_9">
+                                                                            <h3 class="_title"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #adda8b;">01</span>
+                                                                            </h3>
+                                                                            <h4 class="_subtitle"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #ffffff;">traffic
+                                                                                    generation</span></h4>
+                                                                            <div class=_content
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #8d8d8d; line-height: 1.7em;">We
+                                                                                    send a steady stream of highly
+                                                                                    qualified customers in &#8220;hunt
+                                                                                    mode&#8221; to your website through
+                                                                                    both paid and organic traffic
+                                                                                    sources.</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                </div>
+                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        <!--********** 2end ************ -->
+                        <!-- *************2************-->
+
+
+
+                        <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
+                            class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
+                            style="padding-top: 80px; padding-bottom: 80px; ">
+                            <div class=row-bg-wrap>
+                                <div class=inner-wrap>
+                                    <div class="row-bg  using-bg-color  " style="background-color:black; "
+                                        data-color_overlay data-color_overlay_2 data-gradient_direction
+                                        data-overlay_strength=0.3 data-enable_gradient=false></div>
+                                </div>
+                            </div>
+                            <div class="col span_12 dark left">
+                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                    data-shadow=none data-border-animation data-border-animation-delay
+                                    data-border-width=none data-border-style=solid data-border-color data-bg-cover
+                                    data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
+                                    data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                    <div class=vc_column-inner>
+                                        <div class=wpb_wrapper>
+                                            <div id=fws_6073d7138b911 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class=span_9 style="margin: 0 auto;">
+                                                                            <h2 class="span_9"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color:#a3dc18 ;">We
+                                                                                    Consistently Turn Advertising Into
+                                                                                    Profit</span>
+                                                                            </h2>
+                                                                            <p
+                                                                                style="text-align: center; padding: 20px 0; color: #ffffff;">
+                                                                                By sending highly qualified traffic to
+                                                                                your site</p>
+                                                                            <p
+                                                                                style="text-align: center; padding: 20px 0; color: white;">
+                                                                                Most agencies have it wrong! They focus
+                                                                                on clicks and traffic, but you
+                                                                                can&#8217;t take those to the bank. We
+                                                                                are an ROI and performance driven agency
+                                                                                that often turns $1 into $3. Below are
+                                                                                the services we are renowned for.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id=fws_6073d7138c1e1 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class="item_child span_9">
+                                                                            <h3 class="_title"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #adda8b;">01</span>
+                                                                            </h3>
+                                                                            <h4 class="_subtitle"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #ffffff;">traffic
+                                                                                    generation</span></h4>
+                                                                            <div class=_content
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: white; line-height: 1.7em;">We
+                                                                                    send a steady stream of highly
+                                                                                    qualified customers in &#8220;hunt
+                                                                                    mode&#8221; to your website through
+                                                                                    both paid and organic traffic
+                                                                                    sources.</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class="item_child span_9"
+                                                                            style="float: right;">
+                                                                            <h3 class="_title"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #adda8b;">02</span>
+                                                                            </h3>
+                                                                            <h4 class="_subtitle"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #ffffff;">conversion</span>
+                                                                            </h4>
+                                                                            <div class=_content
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: white; line-height: 1.7em;">We
+                                                                                    increase the amount of visitors that
+                                                                                    turn into buyers by implementing
+                                                                                    propriety tactics that help our
+                                                                                    client’s double or even triple their
+                                                                                    sales.</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id=fws_6073d7138ce8a data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section   noshowdesktop "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class=divider-wrap>
+                                                                    <div style="height: 40px;" class=divider></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id=fws_6073d7138d659 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="img-with-aniamtion-wrap center"
+                                                                    data-max-width=100%>
+                                                                    <div class=inner><img data-shadow=none
+                                                                            data-shadow-direction=middle
+                                                                            class="img-with-animation " data-delay=0
+                                                                            height=313 width=314 data-animation=fade-in
+                                                                            src=wp-content/uploads/2013/06/img_we.jpg
+                                                                            srcset="https://kingkong.com.au/wp-content/uploads/2013/06/img_we.jpg 314w, https://kingkong.com.au/wp-content/uploads/2013/06/img_we-150x150.jpg 150w, https://kingkong.com.au/wp-content/uploads/2013/06/img_we-300x300.jpg 300w, https://kingkong.com.au/wp-content/uploads/2013/06/img_we-50x50.jpg 50w, https://kingkong.com.au/wp-content/uploads/2013/06/img_we-100x100.jpg 100w"
+                                                                            alt></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id=fws_6073d7138e746 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section   noshowdesktop "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class=divider-wrap>
+                                                                    <div style="height: 40px;" class=divider></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id=fws_6073d7138edb4 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class="item_child span_9">
+                                                                            <h3 class="_title"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #adda8b;">03</span>
+                                                                            </h3>
+                                                                            <h4 class="_subtitle"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #ffffff;">retargeting</span>
+                                                                            </h4>
+                                                                            <div class=_content
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: white; line-height: 1.7em;">The
+                                                                                    visitors that don’t convert will be
+                                                                                    retargeted through timely and
+                                                                                    compelling ads that will follow them
+                                                                                    around the Internet.</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class="item_child span_9"
+                                                                            style="float: right;">
+                                                                            <h3 class="_title"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #adda8b;">04</span>
+                                                                            </h3>
+                                                                            <h4 class="_subtitle"
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: #ffffff;">nurturing</span>
+                                                                            </h4>
+                                                                            <div class=_content
+                                                                                style="text-align: center;"><span
+                                                                                    style="color: white; line-height: 1.7em;">We
+                                                                                    help you set up an automated system
+                                                                                    that nurtures your leads for you,
+                                                                                    making your website run like a well
+                                                                                    oiled sales machine.</span></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1618,14 +1727,8 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <!--************2end*********888-->
                         <!--********** 3 ************ -->
 
                         <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
@@ -1636,7 +1739,7 @@
                                 <div class=inner-wrap>
                                     <div class="row-bg  using-bg-color  " style="background-color:black; "
                                         data-color_overlay data-color_overlay_2 data-gradient_direction
-                                        data-overlay_strength=0.3 data-enable_gradient=false></div>
+                                        data-overlay_strength=0.3 data-enable_gradient=false id="section3"></div>
                                 </div>
                             </div>
 
@@ -1647,7 +1750,7 @@
                                     data-border-width=none data-border-style=solid data-border-color data-bg-cover
                                     data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
                                     data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                    <div id="section3">
+                                    <div>
                                         <div class=vc_column-inner>
                                             <div class=wpb_wrapper>
                                                 <div id=fws_6073d7138b911 data-midnight data-column-margin=default
@@ -1655,7 +1758,7 @@
                                                     class="wpb_row vc_row-fluid vc_row standard_section    "
                                                     style="padding-top: 0px; padding-bottom: 0px; ">
                                                     <div class=row-bg-wrap>
-                                                        <div class="row-bg" style></div>
+                                                        <div class="row-bg   " style></div>
                                                     </div>
                                                     <div class="col span_12  left">
                                                         <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
@@ -1670,13 +1773,25 @@
                                                                     <div class="wpb_text_column wpb_content_element ">
                                                                         <div class=wpb_wrapper>
                                                                             <div class=span_9 style="margin: 0 auto;">
-
-                                                                                <h3 class="_title"
-                                                                                    style="text-align: left;"><span
-                                                                                        style="color: #a3dc18;">Services</span>
+                                                                                <!-- <p
+                                                                                style="text-align: center; padding: 20px 0; color: #84ba54;">
+                                                                                Fuelled By</p> -->
+                                                                                <h3 class="_title" style="text-align: left;text-align: left;
+    padding: 20px 0;
+    color: #a3dc18;
+    font-size: 50px;
+    font-family: 'futura_ltcondensedextrabold', sans-serif;
+    text-transform: uppercase;
+    /* letter-spacing: -2px; */
+    font-weight: bold;
+    "><span style="color: #a3dc18;">Services</span>
                                                                                 </h3>
+
+
+
+
                                                                                 <p
-                                                                                    style="text-align:left; padding: 20px 0; color: #8d8d8d;">
+                                                                                    style="text-align:left; padding: 20px 0; color: white;">
                                                                                     Combining strategy,creativity and
                                                                                     technology,our work has purpose and
                                                                                     is always results driven.
@@ -1709,15 +1824,14 @@
 
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
-                                                                                                                    style="color: #ffffff;">Advertising
-                                                                                                                    Campaigns</span>
+                                                                                                                    style="color: #ffffff;">Advertising&nbsp;Campaigns</span>
                                                                                                             </h4>
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
                                                                                                                     style="color: #ffffff;">Digital
@@ -1726,7 +1840,7 @@
                                                                                                             </h4>
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
                                                                                                                     style="color: #ffffff;">WebsiteDesign
@@ -1734,17 +1848,16 @@
                                                                                                             </h4>
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
-                                                                                                                    style="color: #ffffff;">Branding
-                                                                                                                    strategy
+                                                                                                                    style="color: #ffffff;">Brandingstrategy
                                                                                                                 </span>
                                                                                                             </h4>
 
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align:left;">
                                                                                                                 <span
                                                                                                                     class="letters"
                                                                                                                     style="color: #ffffff;">Design
@@ -1754,7 +1867,7 @@
                                                                                                             </h4>
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
                                                                                                                     style="color: #ffffff;">photography
@@ -1764,7 +1877,7 @@
                                                                                                             </h4>
                                                                                                             <h4 class="_subtitle"
                                                                                                                 id="ml9"
-                                                                                                                style="text-align: center;">
+                                                                                                                style="text-align: left;">
                                                                                                                 <span
                                                                                                                     class="letters"
                                                                                                                     style="color: #ffffff;">social
@@ -1800,6 +1913,128 @@
                         <!--********** 3end ************ -->
                         <!--********** 4************ -->
 
+                        <!-- <div id=fws_6073d7138afef data-midnight=dark data-bg-mobile-hidden
+                                class="wpb_row vc_row-fluid vc_row full-width-section standard_section  weturn "
+                                style="padding-top: 80px; padding-bottom: 80px; ">
+                            
+                                <div class=row-bg-wrap>
+                                    <div class=inner-wrap>
+                                        <div class="row-bg  using-bg-color  " style="background-color: #333333; "
+                                            data-color_overlay data-color_overlay_2 data-gradient_direction
+                                            data-overlay_strength=0.3 data-enable_gradient=false id="section4"></div>
+                                        </div>
+                                </div>
+
+                                <div class="col span_12 dark left">
+
+                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                    data-shadow=none data-border-animation data-border-animation-delay
+                                    data-border-width=none data-border-style=solid data-border-color data-bg-cover
+                                    data-padding-pos=all data-has-bg-color=false data-bg-color data-bg-opacity=1
+                                    data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                     <div >
+                                        <div class=vc_column-inner>
+                                            <div class=wpb_wrapper>
+                                                <div id=fws_6073d7138b911 data-midnight data-column-margin=default
+                                                    data-bg-mobile-hidden
+                                                    class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                    style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class=span_9 style="margin: 0 auto;">
+                                                                            <p
+                                                                                style="text-align: left; padding: 20px 0; color: #84ba54;">
+                                                                                Fuelled By</p>
+                                                                            <h2 class="span_9" id="animatedhread"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Creativity</span>
+                                                                                </h2>
+                                                                                 <h2 class="span_9" id="animatedhread1"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Strategy</span>
+                                                                                </h2>
+                                                                                <h2 class="span_9" id="animatedhread2"
+                                                                                style="text-align: center; margin-left: auto; margin-right: auto;">
+                                                                                <span style="color: #ffffff;">Technology</span>
+                                                                                </h2>
+                                                                            
+                                                                            <p
+                                                                                style="text-align: center; padding: 20px 0; color: #8d8d8d;">
+                                                                                Flojo is an integrated marketing agency fusing strategy, creativity and
+                                            technology for elite brands and leading hospitality businesses globally.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                  <div class="vc_col-sm-2 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper></div>
+                                                        </div>
+                                                    </div>
+                                 <div id=fws_6073d713a2031 data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 4%; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div class=span_6 style="margin: 0 auto;">
+                                                                            <div class=button
+                                                                                style="text-align: center;background: #a3dc18 none repeat scroll 0 0;border-radius: 4px;color: #fff; font-family: Futura_ltcondensedextrabold;font-size: 28px; letter-spacing: -1px; padding: 18px 0; text-shadow: 0 1px 1px rgb(0 0 0 / 20%); text-transform: uppercase; box-shadow: 0 1px 1px rgb(0 0 0 / 30%); color:white;"><a style="color:white"
+                                                                                    href=30-minute-strategy-session/index.html>GET
+                                                                                    A FREE 30-MINUTE STRATEGY
+                                                                                    SESSION</a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                            </div>
+ -->
+
+                    </div>
 
                     <!--********** 4end ************ -->
 
@@ -1810,14 +2045,14 @@
     </div>
 
 
-    <div id=fws_6073d71399645 data-midnight=dark data-bg-mobile-hidden
-        class="wpb_row vc_row-fluid vc_row full-width-section standard_section  brandexpe "
-        style="padding-top: 80px; padding-bottom: 80px; ">
+    <div id=fws_6073d7139dcee data-midnight=dark data-bg-mobile-hidden
+        class="wpb_row vc_row-fluid vc_row full-width-section standard_section  whychoosek "
+        style="padding-top: 6%; padding-bottom: 6%; ">
         <div class=row-bg-wrap>
             <div class=inner-wrap>
-                <div class="row-bg  using-bg-color  " style="background-color: #ffffff; " data-color_overlay
-                    data-color_overlay_2 data-gradient_direction data-overlay_strength=0.3 data-enable_gradient=false>
-                </div>
+                <div class="row-bg  using-bg-color  " style="background-color: #f2f2f2; " data-color_overlay
+                    data-color_overlay_2 data-gradient_direction data-overlay_strength=0.3 data-enable_gradient=false
+                    id="whychoose"></div>
             </div>
         </div>
         <div class="col span_12 dark left">
@@ -1827,43 +2062,16 @@
                 data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
                 <div class=vc_column-inner>
                     <div class=wpb_wrapper>
-                        <div id=fws_6073d71399e66 data-midnight data-column-margin=default data-bg-mobile-hidden
+
+
+                        <div id=fws_6073d7139ed28 data-midnight data-column-margin=default data-bg-mobile-hidden
                             class="wpb_row vc_row-fluid vc_row standard_section    "
                             style="padding-top: 0px; padding-bottom: 0px; ">
                             <div class=row-bg-wrap>
                                 <div class="row-bg   " style></div>
                             </div>
                             <div class="col span_12  left">
-                                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
-                                    data-border-animation data-border-animation-delay data-border-width=none
-                                    data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
-                                    data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg
-                                    data-hover-bg-opacity=1 data-animation data-delay=0>
-                                    <div class=vc_column-inner>
-                                        <div class=wpb_wrapper>
-                                            <div class="wpb_text_column wpb_content_element  brandexp">
-                                                <div class=wpb_wrapper>
-                                                    <p style="text-align: center;"><span
-                                                            style="text-align: center; color: #000000;">Brand
-                                                            Experience</span></p>
-                                                </div>
-                                            </div>
-                                            <div class=divider-wrap>
-                                                <div style="height: 30px;" class=divider></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id=fws_6073d7139a75f data-midnight data-column-margin=default data-bg-mobile-hidden
-                            class="wpb_row vc_row-fluid vc_row standard_section    "
-                            style="padding-top: 0px; padding-bottom: 0px; ">
-                            <div class=row-bg-wrap>
-                                <div class="row-bg   " style></div>
-                            </div>
-                            <div class="col span_12  left">
-                                <div class="vc_col-sm-1 wpb_column column_container vc_column_container col no-extra-padding"
+                                <div class="vc_col-sm-3 wpb_column column_container vc_column_container col no-extra-padding"
                                     data-border-animation data-border-animation-delay data-border-width=none
                                     data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
                                     data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg
@@ -1872,64 +2080,301 @@
                                         <div class=wpb_wrapper></div>
                                     </div>
                                 </div>
-                                <div class="vc_col-sm-10 wpb_column column_container vc_column_container col no-extra-padding"
-                                    data-border-animation data-border-animation-delay data-border-width=none
-                                    data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
-                                    data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg
-                                    data-hover-bg-opacity=1 data-animation data-delay=0>
-                                    <div class=vc_column-inner>
-                                        <div class=wpb_wrapper>
-                                            <div class="wpb_gallery wpb_content_element clearfix">
+
+                                <div id=fws_6073d71395772 data-midnight=dark data-bg-mobile-hidden
+                                    class="wpb_row vc_row-fluid vc_row standard_section   "
+                                    style="padding-top: 0px; padding-bottom: 0px; ">
+                                    <div class=row-bg-wrap>
+                                        <div class=inner-wrap>
+                                            <div class="row-bg    " style data-color_overlay data-color_overlay_2
+                                                data-gradient_direction data-overlay_strength=0.3
+                                                data-enable_gradient=false>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col span_12 dark left">
+                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                            data-shadow=none data-border-animation data-border-animation-delay
+                                            data-border-width=none data-border-style=solid data-border-color
+                                            data-bg-cover data-padding-pos=all data-has-bg-color=false data-bg-color
+                                            data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation
+                                            data-delay=0>
+                                            <div class=vc_column-inner>
                                                 <div class=wpb_wrapper>
-                                                    <div class=wpb_gallery_slidesnectarslider_style data-interval=5>
-                                                        <div class=nectar-slider-wrap style="height: 400px"
-                                                            data-flexible-height data-fullscreen=false
-                                                            data-full-width=false data-parallax=false
-                                                            data-autorotate=5500 id=ns-id-6073d7139c4c8>
-                                                            <div class=swiper-container style="height: 400px"
-                                                                data-loop=true data-height=400 data-bullets
-                                                                data-bullet_style=see_through data-arrows=true
-                                                                data-bullets=false data-desktop-swipe=true
-                                                                data-settings>
-                                                                <div class=swiper-wrapper>
-                                                                    <div class=swiper-slide data-bg-alignment=center
-                                                                        data-color-scheme=light data-x-pos=centered
-                                                                        data-y-pos=middle>
-                                                                        <div class=image-bg
-                                                                            style="background-image: url(wp-content/uploads/2013/06/brand-experience-slider3.png);">
-                                                                        </div><span class=ie-fix></span>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class=wpb_wrapper>
+                                                            <div data-post-id=6525
+                                                                class='insert-page insert-page-6525 '>
+                                                                <div id=fws_6073d71397543 data-midnight=dark
+                                                                    data-bg-mobile-hidden
+                                                                    class="wpb_row vc_row-fluid vc_row full-width-section standard_section   "
+                                                                    style="padding-top: 0px; padding-bottom: 0px; ">
+                                                                    <div class=row-bg-wrap>
+                                                                        <div class=inner-wrap>
+                                                                            <!--   <div class="row-bg using-image   "
+                                                                        style="background-image: url(wp-content/uploads/2013/06/Book-bg.jpg); background-position: center top; background-repeat: no-repeat; "
+                                                                        data-color_overlay data-color_overlay_2
+                                                                        data-gradient_direction
+                                                                        data-overlay_strength=0.3
+                                                                        data-enable_gradient=false></div> -->
+                                                                        </div>
                                                                     </div>
-                                                                    <div class=swiper-slide data-bg-alignment=center
-                                                                        data-color-scheme=light data-x-pos=centered
-                                                                        data-y-pos=middle>
-                                                                        <div class=image-bg
-                                                                            style="background-image: url(wp-content/uploads/2016/03/brand-experience-slider2.png);">
-                                                                        </div><span class=ie-fix></span>
+                                                                    <div class="col span_12 dark left">
+                                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding"
+                                                                            data-shadow=none data-border-animation
+                                                                            data-border-animation-delay
+                                                                            data-border-width=none
+                                                                            data-border-style=solid data-border-color
+                                                                            data-bg-cover data-padding-pos=all
+                                                                            data-has-bg-color=false data-bg-color
+                                                                            data-bg-opacity=1 data-hover-bg
+                                                                            data-hover-bg-opacity=1 data-animation
+                                                                            data-delay=0>
+                                                                            <div class=vc_column-inner>
+                                                                                <div class=wpb_wrapper>
+                                                                                    <div id=fws_6073d71397cad
+                                                                                        data-midnight
+                                                                                        data-column-margin=default
+                                                                                        data-bg-mobile-hidden
+                                                                                        class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                                                        style="padding-top: 0px; padding-bottom: 0px; ">
+                                                                                        <div class=row-bg-wrap>
+                                                                                            <div class="row-bg   "
+                                                                                                style></div>
+                                                                                        </div>
+                                                                                        <div class="col span_12  left">
+                                                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                                                                data-border-animation
+                                                                                                data-border-animation-delay
+                                                                                                data-border-width=none
+                                                                                                data-border-style=solid
+                                                                                                data-border-color
+                                                                                                data-bg-cover
+                                                                                                data-padding-pos=all
+                                                                                                data-has-bg-color=false
+                                                                                                data-bg-color
+                                                                                                data-bg-opacity=1
+                                                                                                data-hover-bg
+                                                                                                data-hover-bg-opacity=1
+                                                                                                data-animation
+                                                                                                data-delay=0>
+                                                                                                <div
+                                                                                                    class=vc_column-inner>
+                                                                                                    <div
+                                                                                                        class=wpb_wrapper>
+                                                                                                        <div class="img-with-aniamtion-wrap "
+                                                                                                            data-max-width=100%>
+                                                                                                            <!-- <div class=inner>
+                                                                                                        <img data-shadow=none
+                                                                                                            data-shadow-direction=middle
+                                                                                                            class="img-with-animation "
+                                                                                                            data-delay=0
+                                                                                                            height=500
+                                                                                                            width=500
+                                                                                                            data-animation=fade-in
+                                                                                                            src=wp-content/uploads/2014/07/cover-book.png
+                                                                                                            srcset="https://kingkong.com.au/wp-content/uploads/2014/07/cover-book.png 1196w, https://kingkong.com.au/wp-content/uploads/2014/07/cover-book-294x300.png 294w, https://kingkong.com.au/wp-content/uploads/2014/07/cover-book-1003x1024.png 1003w, https://kingkong.com.au/wp-content/uploads/2014/07/cover-book-50x50.png 50w"
+                                                                                                            alt></div> -->
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                                                                data-border-animation
+                                                                                                data-border-animation-delay
+                                                                                                data-border-width=none
+                                                                                                data-border-style=solid
+                                                                                                data-border-color
+                                                                                                data-bg-cover
+                                                                                                data-padding-pos=all
+                                                                                                data-has-bg-color=false
+                                                                                                data-bg-color
+                                                                                                data-bg-opacity=1
+                                                                                                data-hover-bg
+                                                                                                data-hover-bg-opacity=1
+                                                                                                data-animation
+                                                                                                data-delay=0
+                                                                                                style="float:none">
+                                                                                                <div
+                                                                                                    class=vc_column-inner>
+                                                                                                    <div
+                                                                                                        class=wpb_wrapper>
+                                                                                                        <div
+                                                                                                            class=divider-wrap>
+                                                                                                            <div style="height: 80px;"
+                                                                                                                class=divider>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="wpb_text_column wpb_content_element  fivethings">
+                                                                                                            <div
+                                                                                                                class=wpb_wrapper>
+                                                                                                                <h2><span
+                                                                                                                        style="color: #a3dc18;">5
+                                                                                                                        Ways
+                                                                                                                        To
+                                                                                                                        Double
+                                                                                                                        Your
+                                                                                                                        Sales
+                                                                                                                        In
+                                                                                                                        90
+                                                                                                                        Days</span>
+                                                                                                                </h2>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="wpb_text_column wpb_content_element  fivethings">
+                                                                                                            <div
+                                                                                                                class=wpb_wrapper>
+                                                                                                                <p><span
+                                                                                                                        class=fivbut>Free
+                                                                                                                        Report</span>
+                                                                                                                </p>
+                                                                                                                <p><span
+                                                                                                                        style="color: white;">We
+                                                                                                                        have
+                                                                                                                        generated
+                                                                                                                        over
+                                                                                                                        $1.33
+                                                                                                                        billion
+                                                                                                                        in
+                                                                                                                        sales
+                                                                                                                        with
+                                                                                                                        the
+                                                                                                                        5
+                                                                                                                        unbelievably
+                                                                                                                        powerful
+                                                                                                                        strategies
+                                                                                                                        outlined
+                                                                                                                        in
+                                                                                                                        this
+                                                                                                                        free
+                                                                                                                        report.
+                                                                                                                        Download
+                                                                                                                        it
+                                                                                                                        now
+                                                                                                                        before
+                                                                                                                        this
+                                                                                                                        page
+                                                                                                                        comes
+                                                                                                                        down
+                                                                                                                        or
+                                                                                                                        your
+                                                                                                                        competitors
+                                                                                                                        get
+                                                                                                                        their
+                                                                                                                        hands
+                                                                                                                        on
+                                                                                                                        it.</span>
+                                                                                                                </p>
+
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="wpb_text_column wpb_content_element  leadform">
+                                                                                                            <div
+                                                                                                                class=wpb_wrapper>
+
+                                                                                                                <form
+                                                                                                                    class=infusion-form
+                                                                                                                    accept-charset=UTF-8
+                                                                                                                    action=https://wg216.infusionsoft.com/app/form/process/3e47b59487f15f3b034988453fe7f485
+                                                                                                                    method=POST>
+                                                                                                                    <input
+                                                                                                                        name=inf_form_xid
+                                                                                                                        type=hidden
+                                                                                                                        value=3e47b59487f15f3b034988453fe7f485>
+                                                                                                                    <input
+                                                                                                                        name=inf_form_name
+                                                                                                                        type=hidden
+                                                                                                                        value="Sign up for eBook"><input
+                                                                                                                        name=infusionsoft_version
+                                                                                                                        type=hidden
+                                                                                                                        value=1.51.0.52>
+                                                                                                                    </p>
+                                                                                                                    <div class="form row"
+                                                                                                                        style="margin-bottom: 0; padding-bottom: 10px;">
+                                                                                                                        <div
+                                                                                                                            class="col span_12 left">
+                                                                                                                            <div
+                                                                                                                                class="col span_6">
+                                                                                                                                <input
+                                                                                                                                    id=your-name
+                                                                                                                                    class=infusion-field-input-container
+                                                                                                                                    name=inf_field_FirstName
+                                                                                                                                    type=text
+                                                                                                                                    placeholder="First Name*">
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="col span_6">
+                                                                                                                                <input
+                                                                                                                                    id=your-email
+                                                                                                                                    class=infusion-field-input-container
+                                                                                                                                    name=inf_field_Email
+                                                                                                                                    type=text
+                                                                                                                                    placeholder="Work Email*">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="form row"
+                                                                                                                        style="margin-bottom: 0; padding-bottom: 10px;">
+                                                                                                                        <div
+                                                                                                                            class="col span_12 left">
+                                                                                                                            <div
+                                                                                                                                class="col span_6">
+                                                                                                                                <input
+                                                                                                                                    id=inf_field_Phone1
+                                                                                                                                    class=infusion-field-input-container
+                                                                                                                                    name=inf_field_Phone1
+                                                                                                                                    type=text
+                                                                                                                                    placeholder="Mobile Phone*">
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="col span_6">
+                                                                                                                                <input
+                                                                                                                                    id=inf_field_Website
+                                                                                                                                    class=infusion-field-input-container
+                                                                                                                                    name=inf_field_Website
+                                                                                                                                    type=text
+                                                                                                                                    placeholder=Website*>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <p><input
+                                                                                                                            name=inf_custom_GaContent
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            name=inf_custom_GaSource
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            name=inf_custom_GaMedium
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            name=inf_custom_GaTerm
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            name=inf_custom_IPAddress
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            name=inf_custom_GaCampaign
+                                                                                                                            type=hidden
+                                                                                                                            value=null><input
+                                                                                                                            class=wpcf7-submit
+                                                                                                                            type=submit
+                                                                                                                            value="Get my free report">
+                                                                                                                    </p>
+                                                                                                                </form>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class=swiper-slide data-bg-alignment=center
-                                                                        data-color-scheme=light data-x-pos=centered
-                                                                        data-y-pos=middle>
-                                                                        <div class=image-bg
-                                                                            style="background-image: url(wp-content/uploads/2016/03/brand-experience-slider-1.png);">
-                                                                        </div><span class=ie-fix></span>
-                                                                    </div>
-                                                                </div><a href class=slider-prev><i
-                                                                        class=icon-salient-left-arrow></i>
-                                                                    <div class=slide-count> <span
-                                                                            class=slide-current>1</span>
-                                                                        <i class=icon-salient-right-line></i>
-                                                                        <span class=slide-total></span>
-                                                                    </div>
-                                                                </a>
-                                                                <a href class=slider-next><i
-                                                                        class=icon-salient-right-arrow></i>
-                                                                    <div class=slide-count> <span
-                                                                            class=slide-current>1</span>
-                                                                        <i class=icon-salient-right-line></i>
-                                                                        <span class=slide-total></span>
-                                                                    </div>
-                                                                </a>
-                                                                <div class=nectar-slider-loading>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1939,7 +2384,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="vc_col-sm-1 wpb_column column_container vc_column_container col no-extra-padding"
+                                <div class="vc_col-sm-3 wpb_column column_container vc_column_container col no-extra-padding"
                                     data-border-animation data-border-animation-delay data-border-width=none
                                     data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
                                     data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg
@@ -1950,14 +2395,58 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- <div id=fws_6073d7139fcbd data-midnight data-column-margin=default
+                                                data-bg-mobile-hidden
+                                                class="wpb_row vc_row-fluid vc_row standard_section    "
+                                                style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class=row-bg-wrap>
+                                                    <div class="row-bg   " style></div>
+                                                </div>
+                                                <div class="col span_12  left">
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <p style="color:white;" >At Flojo we understand that business is a jungle and only the strongest survive. We’ll do whatever it takes to help you crush the competition into a fine powder. That’s why we’re not just about traffic. It doesn’t matter how many people visit your website if none of them turn into cold cash in the bank. You’re just throwing away all your hard-earned money. We dedicate the time to really figure out your business and your customers. We examine it from every angle and gather information from the people on the front-lines of your business –</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding"
+                                                        data-border-animation data-border-animation-delay
+                                                        data-border-width=none data-border-style=solid data-border-color
+                                                        data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                        data-bg-color data-bg-opacity=1 data-hover-bg
+                                                        data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
+                                                            <div class=wpb_wrapper>
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <p style="color:white;">usually a sales rep or the receptionist – to understand exactly what your customers want. Then we work with you to build a powerful marketing strategy that’ll have hungry customers flocking to your business with their wallets out. But that’s not all. We’ll also make sure you’re set up with a system that delivers a reliable, consistent flow of leads and sales each month so you can spend less time working in the business and focus working on the business. In other words, less guessing, less worrying and more time enjoying life and time with your family.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    </div>
     <div id=fws_6073d7139dcee data-midnight=dark data-bg-mobile-hidden
         class="wpb_row vc_row-fluid vc_row full-width-section standard_section  whychoosek "
-        style="padding-top: 6%; padding-bottom: 6%; ">
+        style="padding-top: 6%; padding-bottom: 6%; padding-left: 6%; padding-right: 6%;">
         <div class=row-bg-wrap>
             <div class=inner-wrap>
                 <div class="row-bg  using-bg-color  " style="background-color: #f2f2f2; " data-color_overlay
@@ -2023,7 +2512,7 @@
                                             <div class="img-with-aniamtion-wrap center" data-max-width=100%>
                                                 <div class=inner><img data-shadow=none data-shadow-direction=middle
                                                         class="img-with-animation " data-delay=0 data-animation=fade-in
-                                                        src="wp-content/logo.png" alt></div>
+                                                        src="wp-content/logogreen.png" srcset="" alt></div>
                                             </div>
                                         </div>
                                     </div>
@@ -2106,8 +2595,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
     <div id=fws_6073d713a09f5 data-midnight=dark data-bg-mobile-hidden
         class="wpb_row vc_row-fluid vc_row full-width-section standard_section  block30Bot "
@@ -2410,12 +2897,52 @@
             <circle class=path fill=none stroke-width=6 stroke-linecap=round cx=33 cy=33 r=30></circle>
         </svg></div><a id=to-top class><i class=icon-angle-up></i></a>
 
+    <script
+        src="https://wg216.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=dc343e460d6f429536e27b6c23e02cdc"></script>
     <script src=../ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js></script>
+    <!--  <script>
+       
+        jQuery(window).scroll(function() {
+  var scroll = jQuery(window).scrollTop();
+    jQuery("#section1").css({
+        backgroundSize: (100 + scroll/5)  + "%",
+        top: -(scroll/10)  + "%",
+
+       
+    });
+});
+    </script> -->
     <script>
+        var text = jQuery('#ml9').text();
 
-        var textWrapper = document.querySelector('#ml9 .letters');
+        var length = text.length;
+        var timeOut;
+        var character = 0;
 
-        console.log(jQuery(".letters").length)
+
+        (function typeWriter() {
+            timeOut = setTimeout(function () {
+                character++;
+                var type = text.substring(0, character);
+                $('.typewriter').text(type);
+                typeWriter();
+
+                if (character == length) {
+                    clearTimeout(timeOut);
+                }
+
+            }, 200);
+        }());
+
+    </script>
+    <script>
+        jQuery(window).scroll(function () {
+
+            jQuery("#section1")
+                // .css("opacity", 1 - jQuery(window).scrollTop() / 450)
+                .css("background-size", (30 + 30 * jQuery(window).scrollTop() / 200) + "%");
+
+        });
     </script>
     <script>jQuery(document).ready(function () {
             jQuery(".infusion-form").validate({
@@ -2705,8 +3232,14 @@
     <script>var sbiajaxurl = "wp-admin/admin-ajax.html";</script>
     <link rel=stylesheet id=wp-mediaelement-css href=wp-includes/js/mediaelement/wp-mediaelement.min.css type=text/css
         media=all>
+    <script>var nectarLove = { "ajaxurl": "https:\/\/kingkong.com.au\/wp-admin\/admin-ajax.php", "postID": "551", "rooturl": "https:\/\/kingkong.com.au", "pluginPages": [], "disqusComments": "false", "loveNonce": "5e66b3ccd1", "mapApiKey": "AIzaSyAgVFhx_-4XBCVuM0_nwWNPJD6N43I8U34" };</script>
     <script src=wp-content/themes/salient/js/touchswipe.min.js></script>
-
+    <script src=wp-includes/js/comment-reply.min.js></script>
+    <script>var mejsL10n = { "language": "en-AU", "strings": { "Close": "Close", "Fullscreen": "Fullscreen", "Turn off Fullscreen": "Turn off Fullscreen", "Go Fullscreen": "Go Fullscreen", "Download File": "Download File", "Download Video": "Download Video", "Play": "Play", "Pause": "Pause", "Captions\/Subtitles": "Captions\/Subtitles", "None": "None", "Time Slider": "Time Slider", "Skip back %1 seconds": "Skip back %1 seconds", "Video Player": "Video Player", "Audio Player": "Audio Player", "Volume Slider": "Volume Slider", "Mute Toggle": "Mute Toggle", "Unmute": "Unmute", "Mute": "Mute", "Use Up\/Down Arrow keys to increase or decrease volume.": "Use Up\/Down Arrow keys to increase or decrease volume.", "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds." } };
+        var _wpmejsSettings = { "pluginPath": "\/wp-includes\/js\/mediaelement\/" };</script>
+    <script src=wp-includes/js/mediaelement/mediaelement-and-player.min.js></script>
+    <script src=wp-includes/js/mediaelement/wp-mediaelement.min.js></script>
 </body>
+<!-- Mirrored from kingkong.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Apr 2021 05:15:31 GMT -->
 
 </html>
