@@ -583,7 +583,7 @@ section {
     font-style: normal
 }
 
-h1 {
+h2 {
     font-family: MabryPro-Medium;
     font-size: 50px;
     font-weight: 500;
@@ -592,67 +592,67 @@ h1 {
 }
 
 @media screen and (min-width:500px) {
-    h1 {
+    h2 {
         font-size: 70px;
         line-height: 86px
     }
 }
 
 @media screen and (min-width:650px) {
-    h1 {
+    h2 {
         font-size: 90px;
         line-height: 106px
     }
 }
 
 @media screen and (min-width:800px) {
-    h1 {
+    h2 {
         font-size: 110px;
         line-height: 126px
     }
 }
 
 @media screen and (min-width:1080px) {
-    h1 {
+    h2 {
         font-size: 130px;
         line-height: 136px
     }
 }
 
-h1.small {
+h2.small {
     font-size: 48px;
     line-height: 50px
 }
 
 @media screen and (min-width:650px) {
-    h1.small {
+    h2.small {
         font-size: 60px;
         line-height: 76px
     }
 }
 
 @media screen and (min-width:650px) {
-    h1.small {
+    h2.small {
         font-size: 80px;
         line-height: 96px
     }
 }
 
 @media screen and (min-width:800px) {
-    h1.small {
+    h2.small {
         font-size: 100px;
         line-height: 116px
     }
 }
 
 @media screen and (min-width:1080px) {
-    h1.small {
+    h2.small {
         font-size: 120px;
         line-height: 136px
     }
 }
 
-h1.super-size {
+h2.super-size {
     font-size: 220px
 }
 
@@ -3276,7 +3276,7 @@ a.small {
     }
 }
 
-.m__home-intro.active h1 {
+.m__home-intro.active h2 {
     opacity: 1;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -3324,7 +3324,7 @@ a.small {
     max-width: 700px
 }
 
-.m__home-intro--content h1 {
+.m__home-intro--content h2 {
     color: #FFF;
     font-size: 48px;
     line-height: 58px;
@@ -3337,27 +3337,27 @@ a.small {
 }
 
 @media screen and (min-width:400px) {
-    .m__home-intro--content h1 {
+    .m__home-intro--content h2 {
         font-size: 60px;
         line-height: 70px
     }
 }
 
 @media screen and (min-width:650px) {
-    .m__home-intro--content h1 {
+    .m__home-intro--content h2 {
         font-size: 80px;
         line-height: 90px
     }
 }
 
 @media screen and (min-width:800px) {
-    .m__home-intro--content h1 {
+    .m__home-intro--content h2 {
         font-size: 110px;
         line-height: 126px
     }
 }
 
-.m__home-intro--content h1 span {
+.m__home-intro--content h2 span {
     opacity: 0;
     position: absolute;
     -webkit-transition-delay: 0;
@@ -4351,7 +4351,7 @@ a.small {
     padding: 170px 0 0
 }
 
-.l__blog .m__filters h1 {
+.l__blog .m__filters h2 {
     font-family: MabryPro-Regular;
     font-size: 28px;
     line-height: 30px;
@@ -4360,7 +4360,7 @@ a.small {
 }
 
 @media screen and (min-width:1080px) {
-    .l__blog .m__filters h1 {
+    .l__blog .m__filters h2 {
         margin-bottom: 0;
         position: absolute
     }
@@ -5061,7 +5061,7 @@ a.small {
     order: 2
 }
 
-.m__client-hero h1 {
+.m__client-hero h2 {
     color: #FFF;
     width: 100%
 }
@@ -5528,7 +5528,7 @@ a.small {
     }
 }
 
-.m__campaign-intro h1 {
+.m__campaign-intro h2 {
     color: #FFF;
     font-size: 38px;
     line-height: 46px;
@@ -5537,7 +5537,7 @@ a.small {
 }
 
 @media screen and (min-width:500px) {
-    .m__campaign-intro h1 {
+    .m__campaign-intro h2 {
         font-size: 44px;
         line-height: 48px;
         margin-bottom: 60px
@@ -5545,14 +5545,14 @@ a.small {
 }
 
 @media screen and (min-width:650px) {
-    .m__campaign-intro h1 {
+    .m__campaign-intro h2 {
         font-size: 54px;
         line-height: 58px
     }
 }
 
 @media screen and (min-width:800px) {
-    .m__campaign-intro h1 {
+    .m__campaign-intro h2 {
         font-size: 70px;
         line-height: 80px;
         margin-bottom: 80px
@@ -5560,7 +5560,7 @@ a.small {
 }
 
 @media screen and (min-width:1080px) {
-    .m__campaign-intro h1 {
+    .m__campaign-intro h2 {
         font-size: 90px;
         line-height: 102px
     }
@@ -6059,14 +6059,14 @@ a.small {
     margin-bottom: 20px
 }
 
-.m__case-study-hero h1 {
+.m__case-study-hero h2 {
     color: #FFF;
     font-size: 42px;
     line-height: 50px
 }
 
 @media screen and (min-width:800px) {
-    .m__case-study-hero h1 {
+    .m__case-study-hero h2 {
         font-size: 46px;
         line-height: 52px
     }
@@ -6756,7 +6756,7 @@ a.small {
     padding: 200px 0 100px
 }
 
-.l__generic--content h1 {
+.l__generic--content h2 {
     color: #0E0A15;
     margin-bottom: 60px;
     font-family: MabryPro-Regular;
@@ -6766,28 +6766,28 @@ a.small {
 }
 
 @media screen and (min-width:500px) {
-    .l__generic--content h1 {
+    .l__generic--content h2 {
         font-size: 28px;
         line-height: 38px
     }
 }
 
 @media screen and (min-width:650px) {
-    .l__generic--content h1 {
+    .l__generic--content h2 {
         font-size: 36px;
         line-height: 46px
     }
 }
 
 @media screen and (min-width:800px) {
-    .l__generic--content h1 {
+    .l__generic--content h2 {
         font-size: 46px;
         line-height: 52px
     }
 }
 
 @media screen and (min-width:1080px) {
-    .l__generic--content h1 {
+    .l__generic--content h2 {
         font-size: 52px;
         line-height: 60px
     }
@@ -6909,14 +6909,14 @@ a.small {
     height: 100%
 }
 
-.m__hero--content h1 {
+.m__hero--content h2 {
     color: #FFF;
     margin-bottom: 55px;
     padding: 0
 }
 
 @media screen and (min-width:800px) {
-    .m__hero--content h1 {
+    .m__hero--content h2 {
         font-size: 82px;
         line-height: 92px;
         padding: 0 105px
@@ -7361,7 +7361,7 @@ a.small {
     }
 }
 
-.l__our-work .container_old h1 {
+.l__our-work .container_old h2 {
     color: #0E0A15;
     font-size: 50px;
     line-height: 66px;
@@ -7369,14 +7369,14 @@ a.small {
 }
 
 @media screen and (min-width:500px) {
-    .l__our-work .container_old h1 {
+    .l__our-work .container_old h2 {
         font-size: 60px;
         line-height: 76px
     }
 }
 
 @media screen and (min-width:650px) {
-    .l__our-work .container_old h1 {
+    .l__our-work .container_old h2 {
         font-size: 70px;
         line-height: 86px;
         margin-bottom: 60px
@@ -7384,14 +7384,14 @@ a.small {
 }
 
 @media screen and (min-width:800px) {
-    .l__our-work .container_old h1 {
+    .l__our-work .container_old h2 {
         font-size: 90px;
         line-height: 106px
     }
 }
 
 @media screen and (min-width:1080px) {
-    .l__our-work .container_old h1 {
+    .l__our-work .container_old h2 {
         font-size: 110px;
         line-height: 126px
     }
@@ -8309,13 +8309,13 @@ a.small {
     }
 }
 
-.l__working-with-us h1 {
+.l__working-with-us h2 {
     color: #0E0A15;
     margin-bottom: 50px
 }
 
 @media screen and (min-width:650px) {
-    .l__working-with-us h1 {
+    .l__working-with-us h2 {
         margin-bottom: 90px
     }
 }
@@ -8555,21 +8555,21 @@ a.small {
     }
 }
 
-.m__intro-experience--tile h1 {
+.m__intro-experience--tile h2 {
     color: #FFF;
     font-size: 140px;
     line-height: 140px
 }
 
 @media screen and (min-width:500px) {
-    .m__intro-experience--tile h1 {
+    .m__intro-experience--tile h2 {
         font-size: 200px;
         line-height: 170px
     }
 }
 
 @media screen and (min-width:1080px) {
-    .m__intro-experience--tile h1 {
+    .m__intro-experience--tile h2 {
         font-size: 240px;
         line-height: 200px
     }
@@ -9758,21 +9758,21 @@ a.small {
     width: 100%
 }
 
-.l__what-we-do h1 {
+.l__what-we-do h2 {
     color: #FFF;
     font-size: 60px;
     margin-bottom: 70px
 }
 
 @media screen and (min-width:500px) {
-    .l__what-we-do h1 {
+    .l__what-we-do h2 {
         font-size: 80px;
         line-height: 80px
     }
 }
 
 @media screen and (min-width:650px) {
-    .l__what-we-do h1 {
+    .l__what-we-do h2 {
         font-size: 100px;
         line-height: 100px;
         margin-bottom: 90px
@@ -9780,14 +9780,14 @@ a.small {
 }
 
 @media screen and (min-width:800px) {
-    .l__what-we-do h1 {
+    .l__what-we-do h2 {
         font-size: 130px;
         line-height: 130px
     }
 }
 
 @media screen and (min-width:1080px) {
-    .l__what-we-do h1 {
+    .l__what-we-do h2 {
         font-size: 170px;
         line-height: 170px;
         margin-bottom: 130px
@@ -10176,12 +10176,12 @@ a.small {
     width: 100%
 }
 
-.m__hero--title h1 {
+.m__hero--title h2 {
     max-width: 75%
 }
 
 @media screen and (min-width:800px) {
-    .m__hero--title h1 {
+    .m__hero--title h2 {
         font-size: 82px;
         line-height: 92px
     }
@@ -10816,13 +10816,13 @@ a.small {
     }
 }
 
-.m__hero--title h1 {
+.m__hero--title h2 {
     color: #FFF;
     margin-bottom: 30px
 }
 
 @media screen and (min-width:800px) {
-    .m__hero--title h1 {
+    .m__hero--title h2 {
         margin-bottom: 50px
     }
 }
@@ -11402,7 +11402,7 @@ a.small {
     }
 }
 
-.l__contact .m__office-tile h1 {
+.l__contact .m__office-tile h2 {
     color: #FFF;
     margin-bottom: 30px;
     padding-left: 0;
@@ -11410,13 +11410,13 @@ a.small {
 }
 
 @media screen and (min-width:500px) {
-    .l__contact .m__office-tile h1 {
+    .l__contact .m__office-tile h2 {
         margin-bottom: 60px
     }
 }
 
 @media screen and (min-width:800px) {
-    .l__contact .m__office-tile h1 {
+    .l__contact .m__office-tile h2 {
         margin-bottom: 0;
         padding-left: 110px;
         text-align: left
@@ -11536,13 +11536,13 @@ a.small {
     }
 }
 
-.l__technology--titles h1 {
+.l__technology--titles h2 {
     color: #0E0A15;
     margin-bottom: 60px
 }
 
 @media screen and (min-width:800px) {
-    .l__technology--titles h1 {
+    .l__technology--titles h2 {
         margin-bottom: 80px
     }
 }
@@ -11961,13 +11961,13 @@ a.small {
     }
 }
 
-.l__ventures--titles h1 {
+.l__ventures--titles h2 {
     color: #FFF;
     margin-bottom: 60px
 }
 
 @media screen and (min-width:800px) {
-    .l__ventures--titles h1 {
+    .l__ventures--titles h2 {
         margin-bottom: 80px
     }
 }
@@ -12373,13 +12373,13 @@ a.small {
     }
 }
 
-.l__modular--titles h1 {
+.l__modular--titles h2 {
     color: #0E0A15;
     margin-bottom: 60px
 }
 
 @media screen and (min-width:800px) {
-    .l__modular--titles h1 {
+    .l__modular--titles h2 {
         margin-bottom: 80px
     }
 }
