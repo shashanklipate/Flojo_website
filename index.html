@@ -1224,21 +1224,20 @@
         </div>
     </div>
 
-    <script>
-        jQuery(window).load(function() {
-                    jQuery('.m__services--list ul li a').mouseover(function() {
+    <!-- <script>
+        jQuery('.m__services--list ul li a').mouseover(function() {
 
-                        var nh = this.id
-                        var ihg = jQuery("#" + nh).data('image');
-                        console.log(ihg)
+            var nh = this.id
+            var ihg = jQuery("#" + nh).data('image');
+            console.log(ihg)
 
-                        jQuery('.img-object-fit').attr('src', ihg);
+            jQuery('.img-object-fit').attr('src', ihg);
 
-
-                    });
+        });
     </script>
 
-    <!-- <script>
+    
+    <script>
         var text = jQuery('#ml9').text();
         var length = text.length;
         var timeOut;
@@ -1257,6 +1256,20 @@
             }, 200);
         }());
     </script> -->
+
+    <script>
+        jQuery(window).load(function() {
+            jQuery('.m__services--list ul li a').mouseover(function() {
+
+                var nh = this.id
+                var ihg = jQuery("#" + nh).data('image');
+                console.log(ihg)
+
+                jQuery('.img-object-fit').attr('src', ihg);
+
+            });
+        });
+    </script>
 
     <script>
         jQuery(window).scroll(function() {
