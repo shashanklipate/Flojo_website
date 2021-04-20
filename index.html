@@ -1223,17 +1223,21 @@
             </div>
         </div>
     </div>
+
     <script>
-        jQuery('.m__services--list ul li a').mouseover(function() {
+        jQuery(window).load(function() {
+                    jQuery('.m__services--list ul li a').mouseover(function() {
 
-            var nh = this.id
-            var ihg = jQuery("#" + nh).data('image');
-            console.log(ihg)
+                        var nh = this.id
+                        var ihg = jQuery("#" + nh).data('image');
+                        console.log(ihg)
 
-            jQuery('.img-object-fit').attr('src', ihg);
+                        jQuery('.img-object-fit').attr('src', ihg);
 
-        });
+
+                    });
     </script>
+
     <!-- <script>
         var text = jQuery('#ml9').text();
         var length = text.length;
