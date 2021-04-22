@@ -12661,3 +12661,90 @@ a.small {
         margin-bottom: 80px
     }
 }
+
+.l__what-we-do--services {
+    padding-bottom: 80px
+}
+
+@media screen and (min-width:650px) {
+    .l__what-we-do--services {
+        padding-bottom: 120px
+    }
+}
+
+.l__what-we-do--services h2 {
+    color: #FFF;
+    margin-bottom: 70px;
+    max-width: 730px
+}
+
+.l__what-we-do--services p {
+    color: #FFF;
+    margin-bottom: 110px;
+    max-width: 650px
+}
+
+.l__what-we-do--services .m__services--tile {
+    cursor: pointer;
+    margin-bottom: 40px
+}
+
+@media screen and (min-width:650px) {
+    .l__what-we-do--services .m__services--tile {
+        margin-bottom: 80px
+    }
+}
+
+.l__what-we-do--services .m__services--tile:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.l__what-we-do--services .m__services--tile--image-holder {
+    border-right: 1px solid #0E0A15;
+    height: 300px;
+    margin-bottom: 40px;
+    overflow: hidden
+}
+
+@media screen and (min-width:500px) {
+    .l__what-we-do--services .m__services--tile--image-holder {
+        height: 400px
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .l__what-we-do--services .m__services--tile--image-holder {
+        height: 500px
+    }
+}
+
+.l__what-we-do--services .m__services--tile--image-holder img {
+    height: 100%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.895, .03, .685, .22) 0s;
+    transition: transform .4s cubic-bezier(.895, .03, .685, .22) 0s;
+    width: 100%
+}
+
+.l__what-we-do--services .m__services--tile .c__button-circle {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 30px
+}
+
+.l__what-we-do--services .m__services--tile .c__button-circle span {
+    font-size: 24px;
+    width: 60%
+}
+
+@media screen and (min-width:1080px) {
+    .l__what-we-do--services .m__services--tile .c__button-circle span {
+        font-size: 30px
+    }
+}
