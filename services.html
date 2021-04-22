@@ -1,0 +1,1027 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+
+<head>
+    <link rel=stylesheet href=wp-content/cache/minify/016e7.default.include.77847c.css media=all>
+    <link rel=stylesheet href=ignitecss.css media=all>
+    <!-- <link rel=stylesheet href=style.minf7c4.css media=all> -->
+    <script src=wp-content/cache/minify/016e7.default.include.0b539f.js></script>
+    <link rel="shortcut icon" href=wp-content/logo.png>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <title>FLOJO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+    <style>
+        #section1 {
+            background-image: url("wp-content/2bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #section2 {
+            background-image: url("wp-content/4bg.jpg");
+            background-repeat: no-repeat fixed 0 0;
+            background-size: cover;
+            overflow: auto;
+            -ms-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        
+        #section2:hover {
+            /* img zoom in on hover (x, y): */
+            -ms-transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1, 1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1, 1);
+            transform: scale(1, 1);
+        }
+        
+        #section3 {
+            /* background-image: url("wp-content/a.jpg"); */
+            background-repeat: no-repeat fixed 0 0;
+            /* background-attachment: fixed; */
+            background-size: cover;
+            /*overflow: auto;*/
+            -ms-transition: all 1s ease;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        
+        #section3:hover {
+            /* img zoom in on hover (x, y): */
+            -ms-transform: scale(1.05, 1.05);
+            -webkit-transform: scale(1.05, 1.05);
+            -moz-transform: scale(1.05, 1.05);
+            -o-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+        }
+        
+        #section4 {
+            background-image: url("wp-content/6bg.jpg");
+            background-repeat: no-repeat;
+            /*width:100%;*/
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: auto;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.8;
+        }
+        
+        #section4:hover {
+            -ms-transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+        }
+        
+        #spin {
+            color: red;
+        }
+        
+        #spin:after {
+            content: "";
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes left_to_right {
+            from {
+                margin-left: 50%;
+            }
+            to {
+                margin-left: 0;
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                color: #d9f09f;
+                content: "CREATIVITY";
+            }
+            30% {
+                content: "STRATEGY";
+            }
+            100% {
+                content: "TECHNOLOGY";
+            }
+        }
+        
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+        
+        #whychoose {
+            background-image: url('wp-content/7bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        #Your_class.hvrbox-layer_scale-rotate {
+            border-radius: 50%;
+            -moz-transform: scale(0) rotateZ(0);
+            -webkit-transform: scale(0) rotateZ(0);
+            -ms-transform: scale(0) rotateZ(0);
+            transform: scale(0) rotateZ(0);
+        }
+        
+        #Your_class:hover .hvrbox-layer_scale-rotate,
+        #Your_class.active .hvrbox-layer_scale-rotate {
+            border-radius: 0%;
+            -moz-transform: scale(1) rotateZ(360deg);
+            -webkit-transform: scale(1) rotateZ(360deg);
+            -ms-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+        }
+        
+        .c__button.dark {
+            background-color: #a3dc18;
+            float: right;
+            color: #FFF;
+            width: 201px;
+            height: 49px;
+        }
+        
+        .c__button.dark:after {
+            /* content: url("wp-content/th.jpg");*/
+            height: 12px;
+            margin-left: 10px;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            -webkit-transition: -webkit-transform .3s cubic-bezier(.895, .03, .685, .22) 0s;
+            transition: transform .3s cubic-bezier(.895, .03, .685, .22) 0s;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .c__button {
+                float: left;
+            }
+        }
+    </style>
+    <style>
+        .homeban p.eyebrow {
+            color: #fff;
+            font-size: 23px;
+            letter-spacing: 4px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .homeban h2 {
+            font-family: futura_ltcondensedextrabold;
+            font-size: 110px;
+            letter-spacing: -9px;
+            line-height: 110px !important;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: normal;
+        }
+        
+        .homeban p.subheadline {
+            color: #a0a0a0;
+            font-size: 25px !important;
+            line-height: 34px !important;
+            margin-bottom: 20px !important;
+            margin-top: 24px;
+            text-align: center;
+        }
+        
+        span.block-text {
+            display: block;
+        }
+        
+        .leadhead.form.row {
+            margin-top: 10px;
+        }
+        
+        .homeban .privacy {
+            display: none;
+        }
+        
+        .video-color-overlay {
+            background-color: #0a0a0a !important;
+            opacity: 0.8 !important;
+        }
+        /* pulsing play button */
+        
+        .pulse-container {
+            height: 100%;
+            margin: 0 auto 30px;
+            width: 125px;
+        }
+        
+        .pulse-button {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border: none;
+            box-shadow: 0 0 0 0 rgba(158, 223, 0, 0.7);
+            border-radius: 50%;
+            background-color: transparent;
+            background-image: url(wp-content/uploads/2016/01/play-button1-1.png);
+            background-size: 145px auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            text-indent: 1000%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .pulse-button:hover {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
+        }
+        
+        @-webkit-keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+            }
+        }
+        
+        @-moz-keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+            }
+        }
+        
+        @-ms-keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+            }
+        }
+        
+        @keyframes pulse {
+            to {
+                box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .homeban p.eyebrow {
+                font-size: 17px;
+                letter-spacing: 1px;
+            }
+            .homeban h2 {
+                font-size: 47px;
+                letter-spacing: -3px;
+                line-height: 47px !important;
+            }
+            .homeban h2 span.block-text,
+            .homeban h2 span.noshowminidesktop {
+                display: inline;
+            }
+            .homeban p.subheadline {
+                display: none;
+            }
+            .leadhead.form.row .col.span_4,
+            .leadhead.form.row .col.span_12.left {
+                margin-bottom: 0px;
+            }
+            .homeban .divider-wrap {
+                display: none;
+            }
+            .pulse-container {
+                margin-top: 15px;
+                margin-bottom: 0px;
+            }
+            .homeban .privacy {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+        .active_texture {
+            background-color: #000;
+            background-image: url("img/textures/grid.html");
+            opacity: 0.8 !important;
+        }
+        
+        .homeban .swiper-slide .content h2 {
+            font-family: futura_ltcondensedextrabold;
+            font-size: 110px;
+            letter-spacing: -7px;
+            line-height: 105px !important;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        #featured article .post-title h2 span,
+        .swiper-slide .content p,
+        #portfolio-filters-inline #current-category,
+        body .vc_text_separator div {
+            color: #a0a0a0;
+            margin: 24px auto 0;
+            text-align: center;
+            width: 80%;
+        }
+        
+        .swiper-slide .button.transparent a,
+        .swiper-slide .button.transparent_2 a {
+            border: medium none;
+            box-shadow: none !important;
+            font-family: proxima_nova_rgbold;
+            padding: 0 !important;
+        }
+        
+        .swiper-slide .button.transparent a:hover {
+            border: medium none;
+        }
+        
+        .swiper-slide .content p {
+            width: 63%;
+        }
+        
+        .mobleadhead input[type="text"] {
+            margin-bottom: 15px;
+        }
+        
+        .mobleadhead p {
+            color: #838383;
+            font-size: 12px;
+            text-align: center;
+            line-height: 14px;
+            padding-top: 10px;
+        }
+        
+        .mobleadhead label.error {
+            color: #fff;
+            font-family: proxima_nova_rgbold;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            position: relative;
+            text-transform: uppercase;
+            top: -6px;
+        }
+        
+        .leadhead input[type="text"] {
+            border: 2px solid #fff !important;
+            border-radius: 40px;
+            box-shadow: none !important;
+            color: #fff !important;
+            font-family: ProximaNova-Regular;
+            font-size: 18px !important;
+            padding: 16px 16px 16px 60px !important;
+        }
+        
+        .ascend .leadhead input[type="submit"] {
+            background-color: #fff;
+            border-radius: 40px !important;
+            box-shadow: none !important;
+            color: #000 !important;
+            font-family: proxima_nova_rgbold;
+            font-size: 18px !important;
+            padding: 15px 16px !important;
+            width: 100%;
+        }
+        
+        .at-content .leadma input[type="submit"],
+        .at-content .leadma button[type="submit"] {
+            background: #a3dc18 none repeat scroll 0 0;
+            border-radius: 3px !important;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            font-family: futura_ltcondensedextrabold;
+            font-size: 35px;
+            letter-spacing: -1px;
+            line-height: 35px;
+            margin-top: 5px;
+            padding: 11px !important;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            width: 100%;
+        }
+        
+        .leadhead input[id="your-name"] {
+            background: transparent url("wp-content/personicon.png") no-repeat scroll 8px center / 39px auto;
+            align-items: center;
+        }
+        
+        .leadhead input[id="your-email"] {
+            background: transparent url("wp-content/envelopeicon.png") no-repeat scroll 15px center / 32px auto;
+        }
+        
+        .leadhead input[id="your-phone"] {
+            background: transparent url("wp-content/phonemo.png") no-repeat scroll 15px center / 32px auto;
+        }
+        
+        .noshowminidesktop .leadhead .col {
+            margin-bottom: 10px;
+        }
+        
+        .homeban .swiper-slide .solid_color a {
+            background-color: transparent !important
+        }
+        
+        .homeban .swiper-slide .button {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="home page-template-default page page-id-551 ascend wpb-js-composer js-comp-ver-5.0.1 vc_responsive" data-footer-reveal=false data-footer-reveal-shadow=none data-cae=linear data-cad=650 data-aie=none data-ls=pretty_photo data-apte=center_mask_reveal
+    data-hhun=1 data-fancy-form-rcs=default data-form-style=default data-is=minimal data-button-style=default data-header-inherit-rc=false data-header-search=false data-animated-anchors=false data-ajax-transitions=false data-full-width-header=true data-slide-out-widget-area=true
+    data-loading-animation=none data-bg-header=false data-ext-responsive=false data-header-resize=0 data-header-color=dark data-smooth-scrolling=0 data-permanent-transparent=false data-responsive=1 style="background-color: #000000; ">
+
+    <script src=wp-content/cache/minify/016e7.default.include-body.885460.js></script>
+
+    <div id=header-outer data-has-menu=false data-mobile-fixed=false data-ptnm=false data-lhe=animated_underline data-user-set-bg=#1f1f1f data-format=default data-permanent-transparent=false data-cart=false data-transparency-option=0 data-shrink-num=6 data-full-width=true
+        data-using-secondary=0 data-using-logo=1 data-logo-height=36 data-m-logo-height=24 data-padding=10 data-header-resize=0>
+        <header id=top>
+            <div class=container>
+                <div class=row>
+                    <div class="col span_3">
+                        <a id=logo href=index.html>
+                            <img class="stnd default-logo" alt="King Kong" src=wp-content/logogreen.png><img class="retina-logo " alt="King Kong" src=wp-content/logogreen.png>
+                        </a>
+                    </div>
+                    <div class="col span_9 col_last">
+                        <a class=mobiiphone href=tel:1300858250>
+                            <img src=media/phonemo.png>
+                        </a>
+                        <a id=logo class=noshowdesktop href=index.html>
+                            <img class=noshowdesktop src=wp-content/logogreen.png alt="King Kong" style="height: 36px;">
+                        </a>
+                        <div class=slide-out-widget-area-toggle>
+                            <div>
+                                <a href=#sidewidgetarea class=closed> <i class=icon-reorder></i> </a>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class=buttons data-user-set-ocm=1>
+                                <li id=call-btn>
+                                    <div>
+                                        <a href=tel:1300858250>CALL US</a>
+                                    </div>
+                                </li>
+                                <li id=getstarted-btn>
+                                    <div><a href="">Get Started</a> </div>
+                                </li>
+                                <li id=search-btn>
+                                    <div><a href=#searchbox><span
+class=icon-salient-search aria-hidden=true></span></a></div>
+                                </li>
+                                <li class=slide-out-widget-area-toggle>
+                                    <div>
+                                        <a href=#sidewidgetarea class=closed> <span> <i
+class="lines-button x2"> <i
+class=lines></i> </i> </span> </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class=sf-menu></ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- <h2 style="text-align: center; color: #a3dc18; font-size: 80px; font-family: 'futura_ltcondensedextrabold'; text-transform: uppercase; font-weight: bold; ">
+        <span style="color: #a3dc18;">Services</span>
+    </h2> -->
+    <section class="l__what-we-do">
+        <h2 class="span_9" id="animatedhread" style="text-align:left;  margin-right: auto;">
+            <b><span style="color:#b7ff00 ;font-size: 110px;text-align:left;    font-weight:800;font-style:normal;font-family: Baskerville;"
+                            id="spin"></span></b>
+        </h2>
+        <img class="l__what-we-do--flame-background" src="wp-content/6b.jpg" />
+        <!-- <div class="container"> -->
+
+        <div class=span_12 style="margin: 0 auto;">
+
+
+            <!-- <h2 class="span_9" id="animatedhread" style="text-align:left;  margin-right: auto;">
+                    <b><span style="color:#b7ff00 ;font-size: 110px;text-align:left;    font-weight:800;font-style:normal;font-family: Baskerville;"
+                            id="spin"></span></b>
+                </h2> -->
+        </div>
+        </div>
+
+        <div class="m__what-we-do--intro">
+
+            <div class="m__what-we-do--intro--bg-image">
+                <video loop autoplay muted playsinline webkit-playsinline style="object-fit: fill;">
+        <source src="wp-content/video.mp4" type="video/mp4">
+      </video>
+                <!-- <img class="img-object-fit" src="https://ignitecreates.com/wp-content/uploads/2020/03/marriott-background.jpg"  /> -->
+            </div>
+            <div class="m__what-we-do--intro--content" style="background-color:#b7ff00; ">
+                <h4>Flojo is an integrated marketing agency</h4>
+                <p>We provide a fully comprehensive selection of services that help achieve your brand & business objectives. Our work always has purpose and is results orientated. </p>
+            </div>
+        </div>
+
+        <div class="l__what-we-do--services ">
+            <div class="container ">
+                <h2 class="small ">Fusing strategy, creativity & technology</h2>
+                <p class="large ">We apply a toolbox of digital marketing channels, creative advertising, branding, strategic planning, data analytics, video & animation, gaming, apps and conversion optimised websites to achieve measurable success.</p>
+                <div class="row ">
+                    <div class="col-xs-4 col-sm-3 col-md-3 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/ad-1.jpg" />
+                        </div>
+                        <a href="advertising-campaigns/index.html " target=" " class="c__button-circle light ">
+                            <span>Advertising Campaigns</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="wp-content/tick.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/ad-1.jpg" />
+                        </div>
+                        <a href="advertising-campaigns/index.html " target=" " class="c__button-circle light ">
+                            <span>Advertising Campaigns</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="wp-content/tick.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/dm-mango.jpg " />
+                        </div>
+                        <a href="digital-marketing/index.html " target=" " class="c__button-circle light ">
+                            <span>Digital Marketing</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/websites-8.jpg " />
+                        </div>
+                        <a href="websites/index.html " target=" " class="c__button-circle light ">
+                            <span>Websites</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/brand.jpeg" />
+                        </div>
+                        <a href="branding-strategy/index.html " target=" " class="c__button-circle light ">
+                            <span>Branding &#038; Strategy</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/games.jpeg" />
+                        </div>
+                        <a href="games-tech/index.html " target=" " class="c__button-circle light ">
+                            <span>Games &#038; Tech</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/animation.jpeg" />
+                        </div>
+                        <a href="design-animation/index.html " target=" " class="c__button-circle light ">
+                            <span>Design &#038; Animation</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/tech.jpeg " />
+                        </div>
+                        <a href="photography-video/index.html " target=" " class="c__button-circle light ">
+                            <span>Photography &#038; Video</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 m__services--tile clickable-block ">
+                        <div class="m__services--tile--image-holder ">
+                            <img class="img-object-fit " src="wp-content/influencer.jpeg" />
+                        </div>
+                        <a href="social-influencers/index.html " target=" " class="c__button-circle light ">
+                            <span>Social &#038; Influencers</span>
+                            <div class="c__button-circle--arrow ">
+                                <img alt="right arrow " src="../wp-content/themes/ignite/library/images/icons/right-arrow.svg " />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container main-content " id=whychoose>
+    <div id=whychoose data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section whychoosek " style="padding-top: 6%; padding-bottom: 6%; ">
+        <div class=row-bg-wrap>
+            <div class=inner-wrap>
+                <div class="row-bg using-bg-color " style=" background-image: 1bg.jpg;" data-color_overlay data-color_overlay_2 data-gradient_direction data-overlay_strength=0.3 data-enable_gradient=false id="whychoose "></div>
+            </div>
+        </div>
+        <div class="col span_12 dark left " id=whychoose>
+            <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding " data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                <div class=vc_column-inner>
+                    <div class=wpb_wrapper>
+
+
+                        <div id=fws_6073d7139ed28 data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section " style="padding-top: 0px; padding-bottom: 0px; ">
+
+                            <div class="col span_12 left ">
+
+
+                                <div id=d ata-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section " style="padding-top: 0px; padding-bottom: 0px; ">
+                                    <div class="col span_12 dark left ">
+                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding " data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                                            data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                            <div class=vc_column-inner>
+                                                <div class=wpb_wrapper>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class=wpb_wrapper>
+                                                            <div data-post-id=6525 class='insert-page insert-page-6525 '>
+                                                                <div id=fws_6073d71397543 data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section " style="padding-top: 0px; padding-bottom:
+                0px; ">
+
+                                                                    <div class="col span_12 dark left ">
+                                                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding " data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                                                                            data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                                            <div class=vc_column-inner>
+                                                                                <div class=wpb_wrapper>
+                                                                                    <div id=fws_6073d71397cad data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section " style="padding-top:
+                0px; padding-bottom: 0px; ">
+
+                                                                                        <div class="col span_12 left ">
+
+                                                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding " data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                                                                data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0 style="float:none ">
+                                                                                                <div class=vc_column-inner>
+                                                                                                    <div class=wpb_wrapper>
+
+                                                                                                        <div class="wpb_text_column wpb_content_element fivethings ">
+                                                                                                            <div class=wpb_wrapper>
+                                                                                                                <!-- <h1 style="color: #ffffff; font-size: 40px; ">Why Choose FLOJO ?</h1> -->
+                                                                                                                <!-- <p style="color: #ffffff; font-size: 20px; ">At FLOJO, we understand that business is a jungle.<br></p> -->
+                                                                                                                <h1><br><span style="color: #a3dc18; font-size: 70px; ">5
+                                                                                                                                      <b>  WAYS TO DOUBLE YOUR SALES IN 90 DAYS</span>
+                                                                                                                    </b>
+                                                                                                                </h1>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="wpb_text_column wpb_content_element fivethings ">
+                                                                                                            <div class=wpb_wrapper>
+                                                                                                                <p><span class=fivbut>Free
+                                                                                                                                        Report</span>
+                                                                                                                </p>
+                                                                                                                <p><span class="text-justify " style="color: white; ">We
+                                                                                                                                        have
+                                                                                                                                        generated
+                                                                                                                                        over
+                                                                                                                                        $1.33
+                                                                                                                                        millions
+                                                                                                                                        in
+                                                                                                                                        sales
+                                                                                                                                        with
+                                                                                                                                        the
+                                                                                                                                        5
+                                                                                                                                        unbelievably
+                                                                                                                                        powerful
+                                                                                                                                        strategies
+                                                                                                                                        outlined
+                                                                                                                                        in
+                                                                                                                                        this
+                                                                                                                                        free
+                                                                                                                                        report.
+                                                                                                                                        Download
+                                                                                                                                        it
+                                                                                                                                        now
+                                                                                                                                        before
+                                                                                                                                        this
+                                                                                                                                        page
+                                                                                                                                        comes
+                                                                                                                                        down
+                                                                                                                                        or
+                                                                                                                                        your
+                                                                                                                                        competitors
+                                                                                                                                        get
+                                                                                                                                        their
+                                                                                                                                        hands
+                                                                                                                                        on
+                                                                                                                                        it.</span>
+                                                                                                                </p>
+
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="wpb_text_column wpb_content_element leadform ">
+                                                                                                            <div class=wpb_wrapper>
+
+                                                                                                                <form class=infusion-form accept-charset=UTF-8 action=" " method=POST>
+                                                                                                                    <input name=inf_form_xid type=hidden value=3e47b59487f15f3b034988453fe7f485>
+                                                                                                                    <input name=inf_form_name type=hidden value="Sign up for eBook "><input name=infusionsoft_version type=hidden value=1.51.0.52>
+                                                                                                                    </p>
+                                                                                                                    <div class="form row " style="margin-bottom: 0; padding-bottom: 10px; ">
+                                                                                                                        <div class="col span_12 left ">
+                                                                                                                            <div class="col span_6 ">
+                                                                                                                                <input id=your-name class=infusion-field-input-container name=inf_field_FirstName type=text placeholder="First Name* ">
+                                                                                                                            </div>
+                                                                                                                            <div class="col span_6 ">
+                                                                                                                                <input id=your-email class=infusion-field-input-container name=inf_field_Email type=text placeholder="Work Email* ">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="form row " style="margin-bottom: 0; padding-bottom: 10px; ">
+                                                                                                                        <div class="col span_12 left ">
+                                                                                                                            <div class="col span_6 ">
+                                                                                                                                <input id=inf_field_Phone1 class=infusion-field-input-container name=inf_field_Phone1 type=text placeholder="Mobile
+                Phone* ">
+                                                                                                                            </div>
+                                                                                                                            <div class="col span_6 ">
+                                                                                                                                <input id=inf_field_Website class=infusion-field-input-container name=inf_field_Website type=text placeholder=Website*>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <p><input name=inf_custom_GaContent type=hidden value=null><input name=inf_custom_GaSource type=hidden value=null>
+                                                                                                                        <input name=inf_custom_GaMedium type=hidden value=null><input name=inf_custom_GaTerm type=hidden value=null>
+                                                                                                                        <input name=inf_custom_IPAddress type=hidden value=null>
+                                                                                                                        <input name=inf_custom_GaCampaign type=hidden value=null><input class=wpcf7-submit type=submit value="Get my free report ">
+                                                                                                                    </p>
+                                                                                                                </form>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id=footer-outer data-midnight=light data-using-widget-area=true style="background-color: #000000; ">
+    <div id=footer-widgets>
+        <div class=container>
+            <div class=row>
+                <div class="col span_3 ">
+                    <div id=nav_menu-5 class="widget widget_nav_menu ">
+                        <h4>Company</h4>
+                        <div class=menu-footer-1-container>
+                            <ul id=menu-footer-1 class=menu>
+                                <li id=menu-item-10777 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10777 ">
+                                    <a href=#whychooseus>About Us</a>
+                                </li>
+                                <li id=menu-item-3527 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3527 ">
+                                    <a href=#fws_6073d7139ed28>Contact Us</a>
+                                </li>
+                                <li id=menu-item-3861 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3861 ">
+                                    <a href="https://instagram.com/flojo_inc?igshid=qjgy2fxvqr6m ">Instagram</a>
+                                </li>
+                                <li id=menu-item-3233 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3233 ">
+                                    <a href="https://www.linkedin.com/company/flojo-inc ">LinkedIN</a>
+                                </li>
+                                <!-- <li id=menu-item-3901 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3901 ">
+                                        <a href=#blog>Blog</a>
+                                    </li>
+                                    <li id=menu-item-10356 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10356 ">
+                                        <a href=#reviews>Reviews</a> -->
+                                <!-- </li>
+                                    <li id=menu-item-9779 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9779 ">
+                                        <a href=#careers>Careers</a>
+                                    </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span_3 ">
+                    <div id=nav_menu-12 class="widget widget_nav_menu ">
+                        <h4>Services</h4>
+                        <div class=menu-footer-2-container>
+                            <ul id=menu-footer-2 class=menu>
+                                <li id=menu-item-3234 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3234 ">
+                                    <a href=>Advertising Campaigns</a>
+                                </li>
+                                <li id=menu-item-3237 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237 ">
+                                    <a href=>Games & Tech</a>
+                                </li>
+                                <!-- <li id=menu-item-3239 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3239 ">
+                                        <a href=>Social Media Marketing</a>
+                                    </li> -->
+                                <li id=menu-item-6581 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6581 ">
+                                    <a href=>Websites</a>
+                                </li>
+                                <li id=menu-item-3241 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3241 ">
+                                    <a href=>Photography and Video</a>
+                                </li>
+                                <!-- <li id=menu-item-3242 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3242 ">
+                                        <a href=>Landing Page Design</a>
+                                    </li> -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col span_3 ">
+                    <div id=nav_menu-6 class="widget widget_nav_menu ">
+                        <h4> .</h4>
+                        <div class=menu-footer-3-container>
+                            <ul id=menu-footer-3 class=menu>
+                                <li id=menu-item-3234 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3234 ">
+                                    <a href=>Digital Marketing</a>
+                                </li>
+                                <li id=menu-item-3237 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237 ">
+                                    <a href=>Branding and Strategy</a>
+                                </li>
+                                <!-- <li id=menu-item-3239 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3239 ">
+                                        <a href=>Social Media Marketing</a>
+                                    </li> -->
+                                <li id=menu-item-6581 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6581 ">
+                                    <a href=>Design and Animation</a>
+                                </li>
+                                <li id=menu-item-3241 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3241 ">
+                                    <a href=>Social and Influencers</a>
+                                </li>
+                                <!-- <li id=menu-item-3242 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3242 ">
+                                        <a href=>Landing Page Design</a>
+                                    </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span_3 ">
+                    <div id=text-7 class="widget widget_text ">
+                        <div class=textwidget><img src=wp-content/logogreen.png class=greylogo>
+                        </div>
+                        <div id=text-11 class="widget widget_text ">
+                            <div class=textwidget>
+                                <p>BANGLORE<br>KOLKATA <br> Phone: 1300 858 250</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=row id=copyright>
+        <div class=container>
+            <div class="col span_9 ">
+                <p>&copy; 2021 Flojo. All Rights Reserved |</p>
+            </div>
+            <div class="col span_3 col_last ">
+                <ul id=social>
+                    <li><a target=_blank href><i class=icon-twitter></i> </a></li>
+                    <li><a target=_blank href=https://www.facebook.com><i class=icon-facebook></i> </a></li>
+                    <li><a target=_blank href=><i class=icon-youtube></i> </a></li>
+                    <li><a target=_blank href="https://www.linkedin.com/company/flojo-inc "><i class=icon-google-plus></i> </a></li>
+                    <li><a target=_blank href="https://instagram.com/flojo_inc?igshid=qjgy2fxvqr6m "><i class=icon-instagram></i></a>
+                    </li>
+                    <li><a target=_blank href=><i class=icon-salient-spotify></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id=slide-out-widget-area-bg class="fullscreen dark "></div>
+    <div id=slide-out-widget-area class=fullscreen data-back-txt=Back>
+        <div class=inner-wrap>
+            <div class=inner><a class=slide_out_area_close href=#><span
+                                    class="icon-salient-x icon-default-style "></span></a>
+                <div class=off-canvas-menu-container>
+                    <ul class=menu>
+                        <li id=menu-item-3485 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3485 ">
+                            <a href="#services ">Services</a><small class=nav_desc>how we can help you grow</small>
+                            <!-- <ul class=sub-menu>
+                                    <li id=menu-item-3487 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3487 ">
+                                        <a href=>SEO</a><small class=nav_desc>Strengthen your
+                                                    organic presence</small>
+                                    </li>
+                                    <li id=menu-item-3486 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3486 ">
+                                        <a href=>CRO</a><small class=nav_desc>Boost your
+                                                    conversion</small>
+                                    </li>
+                                    <li id=menu-item-3927 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3927 ">
+                                        <a href=>PPC</a><small class=nav_desc>Paid
+                                                    Search &#038; Social Traffic</small>
+                                    </li>
+                                    <li id=menu-item-6583 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6583 ">
+                                        <a href=>Web Design</a><small class=nav_desc>High-Performance
+                                                    Websites</small>
+                                    </li>
+                                    <li id=menu-item-3926 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3926 ">
+                                        <a href=>Landing Pages</a><small class=nav_desc>High
+                                                    converting Sales Machine</small>
+                                    </li>
+                                    <li id=menu-item-6582 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6582 ">
+                                        <a href=>Facebook Advertising</a><small class=nav_desc>Explode sales
+                                                    with
+                                                    Facebook Ads</small>
+                                    </li>
+                                </ul> -->
+                        </li>
+                        <li id=menu-item-10778 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10778 ">
+                            <a href="#section3 ">About Us</a><small class=nav_desc>How the tribe
+                                            began</small>
+                        </li>
+                        <li id=menu-item-3906 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3906 ">
+                            <a href="#whychooseus ">Why Choose Us</a><small class=nav_desc>Latest trends in the
+                                            jungle</small>
+                        </li>
+                        <!-- <li id=menu-item-9780 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9780 ">
+                                <a href=>Careers</a><small class=nav_desc>Join our tribe</small>
+                            </li> -->
+                        <li id=menu-item-3039 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3039 ">
+                            <a href="#whychoose ">Contact</a><small class=nav_desc>Speak with a
+                                            tribesman</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=bottom-meta-wrap>
+                <ul class=off-canvas-social-links>
+                    <li><a target=_blank href=https://www.facebook.com /><i class=icon-facebook></i></a>
+                    </li>
+                    <li><a target=_blank href=><i class=icon-youtube></i></a></li>
+                    <li><a target=_blank href=><i class=icon-google-plus></i></a></li>
+                    <li><a target=_blank href=><i class=icon-instagram></i></a></li>
+                    <li><a target=_blank href=><i class=icon-salient-spotify></i></a></li>
+                </ul>
+                <p class=bottom-text>All Rights Reserved Flojo</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
