@@ -14,10 +14,6 @@
 
 
     <style>
-        .row h4 {
-            color: rgb(216, 215, 215);
-        }
-        
         #section1 {
             background-image: url("wp-content/2bg.jpg");
             background-repeat: no-repeat;
@@ -452,6 +448,11 @@
         .homeban .swiper-slide .button {
             display: block;
         }
+        
+        a:hover {
+            text-shadow: 2px 2px 10px #000000;
+            filter: dropshadow(color=#000000, offx=2, offy=2);
+        }
     </style>
 </head>
 
@@ -487,18 +488,27 @@
                             <ul class=buttons data-user-set-ocm=1>
                                 <li id=call-btn>
                                     <div>
-                                        <a href=tel:1300858250>CALL US</a>
+                                        <a href=tel:7980908534>CALL US</a>
                                     </div>
                                 </li>
                                 <li id=getstarted-btn>
-                                    <div><a href="">Get Started</a> </div>
+                                    <div><a href="index.html">Get Started</a> </div>
                                 </li>
                                 <li id=search-btn>
-                                    <div><a href=#searchbox><span class=icon-salient-search aria-hidden=true></span></a></div>
+                                    <div>
+                                        <a href=#searchbox>
+                                            <span class=icon-salient-search aria-hidden=true></span></a>
+                                    </div>
                                 </li>
                                 <li class=slide-out-widget-area-toggle>
                                     <div>
-                                        <a href=#sidewidgetarea class=closed> <span> <i class="lines-button x2"> <i class=lines></i> </i> </span> </a>
+                                        <a href=#sidewidgetarea class=closed>
+                                            <span> 
+                                                <i class="lines-button x2"> 
+                                                    <i class=lines></i> 
+                                                </i> 
+                                            </span>
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
@@ -508,41 +518,69 @@
                 </div>
             </div>
         </header>
+        <div class=ns-loading-cover></div>
+    </div>
+    <div id=search-outer class=nectar>
+        <div id=search>
+            <div class=container>
+                <div id=search-box>
+                    <div class="col span_12">
+                        <form action="" ethod=GET>
+                            <input type=text name=s value="Start Typing..." data-placeholder="Start Typing..."></form>
+                        <span><i>Press enter to begin your search</i></span></div>
+                </div>
+                <div id=close><a href=#><span class=icon-salient-x aria-hidden=true></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div id=mobile-menu data-mobile-fixed=false>
+        <div class=container>
+            <ul>
+                <li><a href>No menu assigned!</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id=ajax-loading-screen data-disable-fade-on-click=0 data-effect=center_mask_reveal data-method=standard>
+        <span class=mask-top></span>
+        <span class=mask-right></span>
+        <span class=mask-bottom></span>
+        <span class=mask-left></span>
     </div>
 
+    <div id=ajax-content-wrap>
+        <div class=blurred-wrap>
 
-
-    <section class="m__hero" style="background-image:url(wp-content/tech.jpeg)">
-        <div class="m__hero--overlay" style="background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(rgba(0,0,0,.9)));
+            <section class="m__hero" style="background-image:url(wp-content/tech.jpeg)">
+                <div class="m__hero--overlay" style="background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(rgba(0,0,0,.9)));
     background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(0,0,0,.9));
     background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,.9));
     height: 100%;
     pointer-events: none;
     position: absolute;
     width: 100%;"></div>
-        <div class="container" style="    height: 100%;
+                <div class="container" style="    height: 100%;
     margin: 0 auto;
     max-width: 1150px;
     padding: 0 30px;
     position: relative;
     width: 100%;">
-            <div class="m__hero--title">
-                <a href="services.html" class="c__button-circle light back">
-                    <div class="c__button-circle--arrow">
-                        <img src="media/right-arrow.svg" />
+                    <div class="m__hero--title">
+                        <a href="services.html" class="c__button-circle light back">
+                            <div class="c__button-circle--arrow">
+                                <img src="media/right-arrow.svg" />
+                            </div>
+
+                            <span>What we do</span>
+                        </a>
+                        <h1 style="color: #e6e6e6;">Photography &#038; Video</h1>
                     </div>
+                </div>
+            </section>
 
-                    <span>What we do</span>
-                </a>
-                <h1 style="color: #e6e6e6;">Photography &#038; Video</h1>
-            </div>
-        </div>
-    </section>
+            <section class="m__intro" style="background-color: #000;">
 
-    <section class="m__intro" style="background-color: #000;">
-
-        <div class="container" style="height: 100%; margin: 0 auto; max-width: 0 auto; padding: 0 auto; position: relative;cwidth: 100%;">
-            <div class="row" style="-webkit-box-sizing: border-box; */
+                <div class="container" style="height: 100%; margin: 0 auto; max-width: 0 auto; padding: 0 auto; position: relative;cwidth: 100%;">
+                    <div class="row" style="-webkit-box-sizing: border-box; */
     -moz-box-sizing: border-box;
     /* box-sizing: border-box; */
     display: -ms-flexbox;
@@ -552,11 +590,11 @@
     -ms-flex: 0 1 auto; -webkit-box-flex: 0; -webkit-flex: 0 1 auto; flex: 0 1 auto; -ms-flex-direction: row;
     -webkit-box-orient: horizontal;-webkit-box-direction: normal; -webkit-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap;">
 
-                <section class="m__listing" style="background-color: #000;">
+                        <section class="m__listing" style="background-color: #000;">
 
-                    <div class="container" style="background-color: #000;">
-                        <h2 style="color:#a3dc18; margin-bottom: 17px; font-size: 46px; ">Game-changing footage</h2>
-                        <div class="row" style="    /* -webkit-box-sizing: border-box; */
+                            <div class="container" style="background-color: #000;">
+                                <h2 style="color:#a3dc18; margin-bottom: 17px; font-size: 46px; ">Game-changing footage</h2>
+                                <div class="row" style="    /* -webkit-box-sizing: border-box; */
                 -moz-box-sizing: border-box;
                 /* box-sizing: border-box; */
                 display: -ms-flexbox;
@@ -575,111 +613,111 @@
                 -ms-flex-wrap: wrap;
                 -webkit-flex-wrap: wrap;
                 flex-wrap: wrap;">
-                            <!--  <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                    <!--  <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
                         <img src="media/tick.svg" />
                         <h4 class="small">Effective advertising campaigns</h4>
                       </div> -->
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Network of photographers and videographers to suit all marketing needs</h4>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Network of photographers and videographers to suit all marketing needs</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Photo briefs to support brand strategy and advertising requirements</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Creative Direction of photoshoots & film shoots</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Editing of film or photography in-house to enhance results</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Perfect for social media marketing that requires high engagement rates</h4>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
+                                        <img src="media/tick.svg" />
+                                        <h4 class="small">Pre-production, production + post production</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Photo briefs to support brand strategy and advertising requirements</h4>
-                            </div>
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Creative Direction of photoshoots & film shoots</h4>
-                            </div>
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Editing of film or photography in-house to enhance results</h4>
-                            </div>
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Perfect for social media marketing that requires high engagement rates</h4>
-                            </div>
-                            <div class="col-xs-12 col-md-6 m__listing--content clickable-block">
-                                <img src="media/tick.svg" />
-                                <h4 class="small">Pre-production, production + post production</h4>
-                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="m__text-title">
+                <div class="container">
+                    <h2 style="text-align: left; padding: 20px 0; color: #0a0a0a; ">Long-form Productions</h2>
+                    <p style="text-align: left; padding: 20px 0; color: #0a0a0a; ">Longer-form video can be produced that sits at the heart of a marketing communications campaign. We storyboard documentary style productions or fast-cut dramatic footage and work with production companies worldwide to direct high quality,
+                        exciting films.
+                        <br> From photo shoots to high-gloss video production, our team can work with you to get the assets needed for your brand and marketing communications.</p>
+                </div>
+            </section>
+
+
+            <div class="container main-content">
+                <div id=fws_6073d7139dcee data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section  whychoosek " style="padding-top: 6%; padding-bottom: 6%; ">
+                    <div class=row-bg-wrap>
+                        <div class=inner-wrap>
+                            <div class="row-bg  using-bg-color  " style="background-color: #f2f2f2; " data-color_overlay data-color_overlay_2 data-gradient_direction data-overlay_strength=0.3 data-enable_gradient=false id="whychoose"></div>
                         </div>
                     </div>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <section class="m__text-title">
-        <div class="container">
-            <h2 style="text-align: left; padding: 20px 0; color: #0a0a0a; ">Long-form Productions</h2>
-            <p style="text-align: left; padding: 20px 0; color: #0a0a0a; ">Longer-form video can be produced that sits at the heart of a marketing communications campaign. We storyboard documentary style productions or fast-cut dramatic footage and work with production companies worldwide to direct high quality,
-                exciting films.
-                <br> From photo shoots to high-gloss video production, our team can work with you to get the assets needed for your brand and marketing communications.</p>
-        </div>
-    </section>
+                    <div class="col span_12 dark left">
+                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                            data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                            <div class=vc_column-inner>
+                                <div class=wpb_wrapper>
 
 
-    <div class="container main-content">
-        <div id=fws_6073d7139dcee data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section  whychoosek " style="padding-top: 6%; padding-bottom: 6%; ">
-            <div class=row-bg-wrap>
-                <div class=inner-wrap>
-                    <div class="row-bg  using-bg-color  " style="background-color: #f2f2f2; " data-color_overlay data-color_overlay_2 data-gradient_direction data-overlay_strength=0.3 data-enable_gradient=false id="whychoose"></div>
-                </div>
-            </div>
-            <div class="col span_12 dark left">
-                <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
-                    data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                    <div class=vc_column-inner>
-                        <div class=wpb_wrapper>
+                                    <div id=fws_6073d7139ed28 data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section    " style="padding-top: 0px; padding-bottom: 0px; ">
+
+                                        <div class="col span_12  left">
 
 
-                            <div id=fws_6073d7139ed28 data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section    " style="padding-top: 0px; padding-bottom: 0px; ">
-
-                                <div class="col span_12  left">
-
-
-                                    <div id=fws_6073d71395772 data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section   " style="padding-top: 0px; padding-bottom: 0px; ">
-                                        <div class="col span_12 dark left">
-                                            <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
-                                                data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                                <div class=vc_column-inner>
-                                                    <div class=wpb_wrapper>
-                                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div id=fws_6073d71395772 data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section   " style="padding-top: 0px; padding-bottom: 0px; ">
+                                                <div class="col span_12 dark left">
+                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                                                        data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                        <div class=vc_column-inner>
                                                             <div class=wpb_wrapper>
-                                                                <div data-post-id=6525 class='insert-page insert-page-6525 '>
-                                                                    <div id=fws_6073d71397543 data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section   " style="padding-top: 0px; padding-bottom: 0px; ">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class=wpb_wrapper>
+                                                                        <div data-post-id=6525 class='insert-page insert-page-6525 '>
+                                                                            <div id=fws_6073d71397543 data-midnight=dark data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row full-width-section standard_section   " style="padding-top: 0px; padding-bottom: 0px; ">
 
-                                                                        <div class="col span_12 dark left">
-                                                                            <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
-                                                                                data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
-                                                                                <div class=vc_column-inner>
-                                                                                    <div class=wpb_wrapper>
-                                                                                        <div id=fws_6073d71397cad data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section    " style="padding-top: 0px; padding-bottom: 0px; ">
+                                                                                <div class="col span_12 dark left">
+                                                                                    <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding" data-shadow=none data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all
+                                                                                        data-has-bg-color=false data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0>
+                                                                                        <div class=vc_column-inner>
+                                                                                            <div class=wpb_wrapper>
+                                                                                                <div id=fws_6073d71397cad data-midnight data-column-margin=default data-bg-mobile-hidden class="wpb_row vc_row-fluid vc_row standard_section    " style="padding-top: 0px; padding-bottom: 0px; ">
 
-                                                                                            <div class="col span_12  left">
+                                                                                                    <div class="col span_12  left">
 
-                                                                                                <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding" data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all data-has-bg-color=false
-                                                                                                    data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0 style="float:none">
-                                                                                                    <div class=vc_column-inner>
-                                                                                                        <div class=wpb_wrapper>
-
-                                                                                                            <div class="wpb_text_column wpb_content_element  fivethings">
+                                                                                                        <div class="vc_col-sm-6 wpb_column column_container vc_column_container col no-extra-padding" data-border-animation data-border-animation-delay data-border-width=none data-border-style=solid data-border-color data-bg-cover data-padding-pos=all data-has-bg-color=false
+                                                                                                            data-bg-color data-bg-opacity=1 data-hover-bg data-hover-bg-opacity=1 data-animation data-delay=0 style="float:none">
+                                                                                                            <div class=vc_column-inner>
                                                                                                                 <div class=wpb_wrapper>
-                                                                                                                    <!-- <h1 style="color: #ffffff; font-size: 40px;">Why Choose FLOJO ?</h1> -->
-                                                                                                                    <!-- <p style="color: #ffffff; font-size: 20px;">At FLOJO, we understand that business is a jungle.<br></p> -->
-                                                                                                                    <h1><br><span style="color: #a3dc18; font-size: 70px;">5
+
+                                                                                                                    <div class="wpb_text_column wpb_content_element  fivethings">
+                                                                                                                        <div class=wpb_wrapper>
+                                                                                                                            <!-- <h1 style="color: #ffffff; font-size: 40px;">Why Choose FLOJO ?</h1> -->
+                                                                                                                            <!-- <p style="color: #ffffff; font-size: 20px;">At FLOJO, we understand that business is a jungle.<br></p> -->
+                                                                                                                            <h1><br><span style="color: #a3dc18; font-size: 70px;">5
                                                                                                                                       <b>  WAYS TO DOUBLE YOUR SALES IN 90 DAYS</span>
-                                                                                                                        </b>
-                                                                                                                    </h1>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div class="wpb_text_column wpb_content_element  fivethings">
-                                                                                                                <div class=wpb_wrapper>
-                                                                                                                    <p><span class=fivbut>Free
+                                                                                                                                </b>
+                                                                                                                            </h1>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="wpb_text_column wpb_content_element  fivethings">
+                                                                                                                        <div class=wpb_wrapper>
+                                                                                                                            <p><span class=fivbut>Free
                                                                                                                                         Report</span>
-                                                                                                                    </p>
-                                                                                                                    <p><span class="text-justify" style="color: white;">We
+                                                                                                                            </p>
+                                                                                                                            <p><span class="text-justify" style="color: white;">We
                                                                                                                                         have
                                                                                                                                         generated
                                                                                                                                         over
@@ -714,43 +752,45 @@
                                                                                                                                         hands
                                                                                                                                         on
                                                                                                                                         it.</span>
-                                                                                                                    </p>
+                                                                                                                            </p>
 
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div class="wpb_text_column wpb_content_element  leadform">
-                                                                                                                <div class=wpb_wrapper>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="wpb_text_column wpb_content_element  leadform">
+                                                                                                                        <div class=wpb_wrapper>
 
-                                                                                                                    <form class=infusion-form accept-charset=UTF-8 action="" method=POST>
-                                                                                                                        <input name=inf_form_xid type=hidden value=3e47b59487f15f3b034988453fe7f485>
-                                                                                                                        <input name=inf_form_name type=hidden value="Sign up for eBook"><input name=infusionsoft_version type=hidden value=1.51.0.52>
-                                                                                                                        </p>
-                                                                                                                        <div class="form row" style="margin-bottom: 0; padding-bottom: 10px;">
-                                                                                                                            <div class="col span_12 left">
-                                                                                                                                <div class="col span_6">
-                                                                                                                                    <input id=your-name class=infusion-field-input-container name=inf_field_FirstName type=text placeholder="First Name*">
+                                                                                                                            <form class=infusion-form accept-charset=UTF-8 action="" method=POST>
+                                                                                                                                <input name=inf_form_xid type=hidden value=3e47b59487f15f3b034988453fe7f485>
+                                                                                                                                <input name=inf_form_name type=hidden value="Sign up for eBook"><input name=infusionsoft_version type=hidden value=1.51.0.52>
+                                                                                                                                </p>
+                                                                                                                                <div class="form row" style="margin-bottom: 0; padding-bottom: 10px;">
+                                                                                                                                    <div class="col span_12 left">
+                                                                                                                                        <div class="col span_6">
+                                                                                                                                            <input id=your-name class=infusion-field-input-container name=inf_field_FirstName type=text placeholder="First Name*">
+                                                                                                                                        </div>
+                                                                                                                                        <div class="col span_6">
+                                                                                                                                            <input id=your-email class=infusion-field-input-container name=inf_field_Email type=text placeholder="Work Email*">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
                                                                                                                                 </div>
-                                                                                                                                <div class="col span_6">
-                                                                                                                                    <input id=your-email class=infusion-field-input-container name=inf_field_Email type=text placeholder="Work Email*">
+                                                                                                                                <div class="form row" style="margin-bottom: 0; padding-bottom: 10px;">
+                                                                                                                                    <div class="col span_12 left">
+                                                                                                                                        <div class="col span_6">
+                                                                                                                                            <input id=inf_field_Phone1 class=infusion-field-input-container name=inf_field_Phone1 type=text placeholder="Mobile Phone*">
+                                                                                                                                        </div>
+                                                                                                                                        <div class="col span_6">
+                                                                                                                                            <input id=inf_field_Website class=infusion-field-input-container name=inf_field_Website type=text placeholder=Website*>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
                                                                                                                                 </div>
-                                                                                                                            </div>
+                                                                                                                                <p><input name=inf_custom_GaContent type=hidden value=null><input name=inf_custom_GaSource type=hidden value=null>
+                                                                                                                                    <input name=inf_custom_GaMedium type=hidden value=null><input name=inf_custom_GaTerm type=hidden value=null>
+                                                                                                                                    <input name=inf_custom_IPAddress type=hidden value=null>
+                                                                                                                                    <input name=inf_custom_GaCampaign type=hidden value=null><input class=wpcf7-submit type=submit value="Get my free report">
+                                                                                                                                </p>
+                                                                                                                            </form>
                                                                                                                         </div>
-                                                                                                                        <div class="form row" style="margin-bottom: 0; padding-bottom: 10px;">
-                                                                                                                            <div class="col span_12 left">
-                                                                                                                                <div class="col span_6">
-                                                                                                                                    <input id=inf_field_Phone1 class=infusion-field-input-container name=inf_field_Phone1 type=text placeholder="Mobile Phone*">
-                                                                                                                                </div>
-                                                                                                                                <div class="col span_6">
-                                                                                                                                    <input id=inf_field_Website class=infusion-field-input-container name=inf_field_Website type=text placeholder=Website*>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <p><input name=inf_custom_GaContent type=hidden value=null><input name=inf_custom_GaSource type=hidden value=null>
-                                                                                                                            <input name=inf_custom_GaMedium type=hidden value=null><input name=inf_custom_GaTerm type=hidden value=null>
-                                                                                                                            <input name=inf_custom_IPAddress type=hidden value=null>
-                                                                                                                            <input name=inf_custom_GaCampaign type=hidden value=null><input class=wpcf7-submit type=submit value="Get my free report">
-                                                                                                                        </p>
-                                                                                                                    </form>
+                                                                                                                    </div>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </div>
@@ -910,7 +950,7 @@
                     <div class=off-canvas-menu-container>
                         <ul class=menu>
                             <li id=menu-item-3485 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3485">
-                                <a href="#services">Services</a><small class=nav_desc>how we can help you grow</small>
+                                <a href="services.html">Services</a><small class=nav_desc>how we can help you grow</small>
                                 <!-- <ul class=sub-menu>
                                     <li id=menu-item-3487 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3487">
                                         <a href=>SEO</a><small class=nav_desc>Strengthen your
@@ -940,11 +980,11 @@
                                 </ul> -->
                             </li>
                             <li id=menu-item-10778 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10778">
-                                <a href="#section3">About Us</a><small class=nav_desc>How the tribe
+                                <a href="index.html#section3">About Us</a><small class=nav_desc>How the tribe
                                             began</small>
                             </li>
                             <li id=menu-item-3906 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3906">
-                                <a href="#whychooseus">Why Choose Us</a><small class=nav_desc>Latest trends in the
+                                <a href="index.html#whychooseus">Why Choose Us</a><small class=nav_desc>Latest trends in the
                                             jungle</small>
                             </li>
                             <!-- <li id=menu-item-9780 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9780">
